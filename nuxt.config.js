@@ -18,11 +18,23 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { 
+    color: 'var(--color-primary)',
+    height: '5px'
+  },
+
+  /**
+   * Router
+   */
+  router: {
+    linkActiveClass: 'is-active'
+  },
+
   /*
   ** Global CSS
   */
   css: [
+    '@/assets/scss/styles.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -38,8 +50,19 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/svg'
+    '@nuxtjs/svg',
+    '@nuxtjs/style-resources',
+    '@nuxtjs/svg-sprite'
   ],
+  styleResources: {
+    scss: [
+      '~assets/scss/tools/*.scss',
+      '~assets/scss/settings/*.scss',
+    ]
+  },
+  svgSprite: {
+    elementClass: 'c-icon'
+  },
   /*
   ** Build configuration
   */

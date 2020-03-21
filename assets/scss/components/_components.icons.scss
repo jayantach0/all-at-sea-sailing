@@ -1,0 +1,12 @@
+.c-icon {
+  fill: currentColor;
+
+  &--block {
+    display: block;
+  }
+
+  &--large {
+    width: 2rem;
+    height: 2rem;
+  }
+}

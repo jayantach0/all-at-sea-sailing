@@ -11,8 +11,13 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/svg": "^0.1.6",
-    "nuxt": "^2.0.0"
+    "@nuxtjs/svg-sprite": "^0.4.10",
+    "node-sass": "^4.13.1",
+    "nuxt": "^2.0.0",
+    "sass-loader": "^8.0.2",
+    "sass-mq": "^5.0.1"
   },
   "devDependencies": {
     "eslint-config-prettier": "^6.10.0",

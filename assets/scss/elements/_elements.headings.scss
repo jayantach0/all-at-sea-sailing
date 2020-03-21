@@ -1,0 +1,34 @@
+/**
+ * Headings
+ */
+
+h1 {
+  font-size: var(--text-enormous);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: var(--text-huge);
+  line-height: var(--heading-line-height)
+}
+
+h3 {
+  font-size: var(--text-large);
+  line-height: var(--heading-line-height)
+}
+
+h4 {
+  font-size: var(--text-default);
+  line-height: var(--heading-line-height)
+}
+
+h5 {
+  font-size: var(--text-default);
+  line-height: var(--body-line-height);
+  margin-bottom: var(--spacing-tiny);
+}
+
+h6 {
+  font-size: var(--text-small);
+  line-height: var(--body-line-height)
+}
