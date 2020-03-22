@@ -21,6 +21,7 @@ $namespace: ''; // global name space to prepend styles if needed
 
 
 // GENERIC
+@import "generic/generic.fonts";
 @import "generic/generic.normalize";
 @import "generic/generic.shared";
 
