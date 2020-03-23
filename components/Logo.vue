@@ -181,8 +181,6 @@
 <script></script>
 <style lang="scss">
 .c-logo {
-  max-width: 200px;
-  height: auto;
   fill: var(--color-primary);
   svg {
     width: 100%;

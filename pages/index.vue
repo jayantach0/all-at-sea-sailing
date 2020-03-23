@@ -1,66 +1,63 @@
 <template>
-  <div class="c-home-hero">
-    <div class="c-home-hero__body">
-      <div class="c-home-hero__body-inner">
-        <img
-          class="c-home-hero__logo"
-          :src="require('~/assets/images/logo-circle.svg')"
-        />
-        <h1 class="c-home-hero__title">
-          Charter your own yacht in some of the Mediterraneans most beautiful
-          locations.
-        </h1>
-        <p>
-          We provide the skipper, so you can sit back and relax or learn to
-          sail, it’s up you! Either way you’ll fully enjoy a holiday of a
-          lifetime.
-        </p>
-        <p>
-          <nuxt-link to="/" class="c-btn">
-            Watch Trailer
-          </nuxt-link>
-        </p>
+  <div>
+    <hero-banner :title="heroTitle" :body="heroBody" />
+    <section-block>
+      <div class="o-wrapper o-wrapper--tiny u-text-center">
+        <h2 class="u-h4 u-color-primary">
+          Chartering a yacht has never been so easy! Stress free, every step of
+          the way.
+        </h2>
+        <p>Simply answer these 3 questions and get a quote...</p>
       </div>
-    </div>
-    <div class="c-home-hero__banner"></div>
+      <div class="o-wrapper o-wrapper--tiny u-text-center">FORM</div>
+    </section-block>
+    <section-block color="dark">
+      <div class="o-wrapper o-wrapper--small">
+        <h3 class="c-heading c-heading--bordered u-text-center">
+          What’s included in the price
+        </h3>
+        <ul class="o-list-bare o-layout u-color-branding">
+          <li
+            v-for="item in includedList"
+            :key="item"
+            class="o-pack o-pack--center o-layout__item u-1/2@tablet u-margin-bottom"
+          >
+            <span class="o-pack__item u-padding-right-small">
+              <svg-icon
+                name="checkmark"
+                class="c-icon--block c-icon--large c-icon--circled"
+              />
+            </span>
+            <span class="o-pack__item">{{ item }}</span>
+          </li>
+        </ul>
+      </div>
+    </section-block>
   </div>
 </template>
-
 <script>
-export default {}
-</script>
-
-<style lang="scss">
-.c-home-hero {
-  display: flex;
-  background-color: var(--color-primary);
-  min-height: 80vh;
-  &__body {
-    color: #fff;
-    flex-basis: 40%;
-    display: flex;
-    align-items: center;
-    min-height: 100%;
-    padding: var(--spacing);
-    &-inner {
-      max-width: 450px;
-      margin-left: auto;
+import HeroBanner from '~/components/home/HeroBanner'
+import SectionBlock from '~/components/section'
+export default {
+  components: {
+    HeroBanner,
+    SectionBlock
+  },
+  data() {
+    return {
+      heroTitle:
+        'Charter your own yacht in some of the Mediterraneans most beautiful locations.',
+      heroBody:
+        'We provide the skipper, so you can sit back and relax or learn to sail, it’s up you! Either way you’ll fully enjoy a holiday of a lifetime.',
+      includedList: [
+        'Qualified and Experienced Skipper',
+        'Linen, towels and fuel costs included',
+        'No hidden extra costs after quote',
+        'All snorkelling equipment included',
+        'Tax’s and Ports fees all covered',
+        'Pay deposit and full amount later'
+      ]
     }
   }
-  &__banner {
-    background-image: url('~assets/images/hero-banner.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-    flex-basis: 60%;
-  }
-
-  &__logo {
-    max-width: 150px;
-    margin-bottom: var(--spacing);
-  }
-
-  &__title {
-    font-size: 1.5rem;
-  }
 }
-</style>
+</script>

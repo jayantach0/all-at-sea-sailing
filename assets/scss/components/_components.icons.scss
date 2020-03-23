@@ -9,4 +9,10 @@
     width: 2rem;
     height: 2rem;
   }
+
+  &--circled {
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    // padding: var(--spacing);
+  }
 }

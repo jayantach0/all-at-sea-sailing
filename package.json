@@ -16,6 +16,7 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/svg": "^0.1.6",
     "@nuxtjs/svg-sprite": "^0.4.10",
+    "aos": "^2.3.4",
     "babel-eslint": "^10.1.0",
     "eslint-plugin-nuxt": "^0.5.2",
     "node-sass": "^4.13.1",
@@ -27,6 +28,7 @@
     "@nuxtjs/eslint-config": "^2.0.2",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "vue-svg-loader": "^0.16.0"
   }
 }

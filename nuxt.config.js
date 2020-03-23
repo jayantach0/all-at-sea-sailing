@@ -34,11 +34,11 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/scss/styles.scss'],
+  css: ['@/assets/scss/styles.scss', 'aos/dist/aos.css'],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: '@/plugins/aos', ssr: false }],
   /*
    ** Nuxt.js dev-modules
    */
@@ -48,10 +48,9 @@ export default {
    */
   modules: [
     '@nuxtjs/eslint-module',
-    // '@nuxtjs/svg',
+    '@nuxtjs/svg',
     '@nuxtjs/style-resources',
-    '@nuxtjs/svg-sprite',
-    '@bazzite/nuxt-optimized-images'
+    '@nuxtjs/svg-sprite'
   ],
   styleResources: {
     scss: ['~assets/scss/tools/*.scss', '~assets/scss/settings/*.scss']
