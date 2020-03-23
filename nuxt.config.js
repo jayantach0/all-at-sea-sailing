@@ -34,11 +34,11 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/scss/styles.scss', 'aos/dist/aos.css'],
+  css: ['@/assets/scss/styles.scss'],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '@/plugins/aos', ssr: false }],
+  plugins: [{ src: '@/plugins/aos', ssr: false }, '~/plugins/vee-validate'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -62,6 +62,7 @@ export default {
    ** Build configuration
    */
   build: {
+    transpile: ['vee-validate/dist/rules'],
     /*
      ** You can extend webpack config here
      */

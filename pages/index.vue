@@ -3,13 +3,21 @@
     <hero-banner :title="heroTitle" :body="heroBody" />
     <section-block>
       <div class="o-wrapper o-wrapper--tiny u-text-center">
-        <h2 class="u-h4 u-color-primary">
+        <h2
+          class="u-h4 u-color-primary"
+          data-aos="fade-up"
+          data-aos-once="true"
+        >
           Chartering a yacht has never been so easy! Stress free, every step of
           the way.
         </h2>
-        <p>Simply answer these 3 questions and get a quote...</p>
+        <p data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
+          Simply answer these 3 questions and get a quote...
+        </p>
       </div>
-      <div class="o-wrapper o-wrapper--tiny u-text-center">FORM</div>
+      <div class="o-wrapper o-wrapper--tiny u-text-center">
+        <booking-form />
+      </div>
     </section-block>
     <section-block color="dark">
       <div class="o-wrapper o-wrapper--small">
@@ -37,11 +45,13 @@
 </template>
 <script>
 import HeroBanner from '~/components/home/HeroBanner'
-import SectionBlock from '~/components/section'
+import SectionBlock from '~/components/Section'
+import BookingForm from '~/components/BookingForm'
 export default {
   components: {
     HeroBanner,
-    SectionBlock
+    SectionBlock,
+    BookingForm
   },
   data() {
     return {

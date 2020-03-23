@@ -1,27 +1,30 @@
 <template>
   <div class="c-home-hero">
     <div class="c-home-hero__body">
-      <div
-        class="c-home-hero__body-inner"
-        data-aos="fade"
-        data-aos-once="true"
-        data-aos-delay="150"
-      >
+      <div class="c-home-hero__body-inner">
         <img
           class="c-home-hero__logo"
           :src="require('~/assets/images/logo-circle.svg')"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-delay="200"
         />
         <div>
-          <h1 class="c-home-hero__title">
+          <h1
+            class="c-home-hero__title"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-delay="250"
+          >
             Charter your own yacht in some of the Mediterraneans most beautiful
             locations.
           </h1>
-          <p>
+          <p data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
             We provide the skipper, so you can sit back and relax or learn to
             sail, it’s up you! Either way you’ll fully enjoy a holiday of a
             lifetime.
           </p>
-          <p>
+          <p data-aos="fade-up" data-aos-once="true" data-aos-delay="350">
             <nuxt-link to="/" class="c-btn">
               Watch Trailer
             </nuxt-link>
