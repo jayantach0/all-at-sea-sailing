@@ -130,13 +130,11 @@ export default {
         .join('&')
     },
     submit() {
-      // const isValid = this.$refs.observer.validate()
-      // if (isValid) {
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
-          'form-name': 'booking-form',
+          'form-name': 'book',
           ...this.bookingForm
         })
       })
