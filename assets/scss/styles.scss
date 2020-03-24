@@ -48,6 +48,7 @@ $namespace: ''; // global name space to prepend styles if needed
 // Build and include your project’s UI components here.
 @import "components/components.buttons";
 @import "components/components.icons";
+@import "components/components.form";
 
 
 // TRANSITIONS

@@ -15,7 +15,12 @@
           Simply answer these 3 questions and get a quote...
         </p>
       </div>
-      <div class="o-wrapper o-wrapper--tiny u-text-center">
+      <div
+        class="o-wrapper o-wrapper--x-tiny"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-delay="100"
+      >
         <booking-form />
       </div>
     </section-block>

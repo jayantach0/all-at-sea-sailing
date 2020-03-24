@@ -1,12 +1,20 @@
-import { extend } from 'vee-validate'
-import { required, alpha } from 'vee-validate/dist/rules'
+import { extend, configure } from 'vee-validate'
+import { required, email } from 'vee-validate/dist/rules'
+
+configure({
+  classes: {
+    valid: 'is-valid',
+    invalid: 'is-invalid',
+    dirty: 'is-dirty'
+  }
+})
 
 extend('required', {
   ...required,
   message: 'This field is required'
 })
 
-extend('alpha', {
-  ...alpha,
-  message: 'This field must only contain alphabetic characters'
+extend('email', {
+  ...email,
+  message: 'Please use a valid email address'
 })
