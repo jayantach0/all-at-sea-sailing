@@ -1,0 +1,85 @@
+<form
+  name="booking-home"
+  action="/thanks"
+  method="post"
+  novalidate
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+>
+  <input type="hidden" name="form-name" value="booking-home" />
+      <div class="c-form-group" :class="classes">
+        <label class="c-form-label" for="name">Name</label>
+        <input
+          id="name"
+          v-model="bookingForm.name"
+          name="Name"
+          class="c-form-control"
+          type="text"
+          required
+        />
+      </div>
+    
+      <div class="c-form-group" :class="classes">
+        <label class="c-form-label" for="email">Email</label>
+        <input
+          id="email"
+          v-model="bookingForm.email"
+          name="Email"
+          class="c-form-control"
+          type="text"
+          required
+        />
+      </div>
+    
+    
+      <div class="c-form-group" :class="classes">
+        <label class="c-form-label" for="destination">Destination</label>
+        <select
+          id="destination"
+          v-model="bookingForm.destination"
+          name="Destination"
+          class="c-form-control"
+        >
+          <option selected value="Greece">Greece</option>
+          <option value="Croatia">Croatia</option>
+          <option value="Turkey">Turkey</option>
+          <option value="Montenegro">Montenegro</option>
+          <option value="Italy">Italy</option>
+        </select>
+      </div>
+    
+    
+      <div class="c-form-group" :class="classes">
+        <label class="c-form-label" for="yacht">Yacht</label>
+        <select
+          id="yacht"
+          v-model="bookingForm.yacht"
+          name="Yacht"
+          class="c-form-control"
+        >
+          <option selected value="Medium">Medium (Max 8 crew)</option>
+          <option value="Large">Large (Max 10 crew)</option>
+          <option value="Catamaran">Medium (Max 8 crew)</option>
+        </select>
+      </div>
+    
+    
+      <div class="c-form-group" :class="classes">
+        <label class="c-form-label" for="date">Date</label>
+        <input
+          id="date"
+          v-model="bookingForm.date"
+          name="Date"
+          class="c-form-control"
+          type="date"
+          required
+        />
+      </div>
+    
+    <div class="u-text-center">
+      <button class="c-btn" type="submit" value="Get a quote">
+        Get a quote
+      </button>
+    </div>
+  </div>
+</form>
