@@ -1,12 +1,12 @@
 <template>
-  <validation-observer slim>
+  <validation-observer v-slot="{ handleSubmit }" slim>
     <form
       name="booking-home"
-      action="/thanks"
       method="post"
       novalidate
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      @submit.prevent="handleSubmit(submit)"
     >
       <input type="hidden" name="form-name" value="booking-home" />
       <div v-show="!formSubmitted">
@@ -16,7 +16,7 @@
             <input
               id="name"
               v-model="bookingForm.name"
-              name="Name"
+              name="name"
               class="c-form-control"
               type="text"
               required
@@ -33,7 +33,7 @@
             <input
               id="email"
               v-model="bookingForm.email"
-              name="Email"
+              name="email"
               class="c-form-control"
               type="text"
               required
@@ -47,7 +47,7 @@
             <select
               id="destination"
               v-model="bookingForm.destination"
-              name="Destination"
+              name="destination"
               class="c-form-control"
             >
               <option selected value="Greece">Greece</option>
@@ -65,7 +65,7 @@
             <select
               id="yacht"
               v-model="bookingForm.yacht"
-              name="Yacht"
+              name="yacht"
               class="c-form-control"
             >
               <option selected value="Medium">Medium (Max 8 crew)</option>
@@ -81,7 +81,7 @@
             <input
               id="date"
               v-model="bookingForm.date"
-              name="Date"
+              name="date"
               class="c-form-control"
               type="date"
               required
