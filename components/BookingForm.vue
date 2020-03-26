@@ -1,5 +1,5 @@
 <template>
-  <validation-observer v-slot="{ handleSubmit }" slim>
+  <validation-observer slim>
     <form
       name="booking-home"
       action="/thanks"
@@ -7,7 +7,6 @@
       novalidate
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      @submit.prevent="handleSubmit(submit)"
     >
       <input type="hidden" name="form-name" value="booking-home" />
       <div v-show="!formSubmitted">
