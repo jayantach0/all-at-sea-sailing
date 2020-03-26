@@ -28,16 +28,8 @@ export default {
 <style lang="scss">
 .c-section {
   background-color: #fff;
-  padding-top: var(--spacing);
-  padding-bottom: var(--spacing);
-  @include mq($from: tablet) {
-    padding-top: var(--spacing-large);
-    padding-bottom: var(--spacing-large);
-  }
-  @include mq($from: desktop) {
-    padding-top: var(--spacing-huge);
-    padding-bottom: var(--spacing-huge);
-  }
+  padding-top: var(--spacing-huge);
+  padding-bottom: var(--spacing-huge);
 
   &--dark {
     background-color: var(--color-primary);

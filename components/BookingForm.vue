@@ -2,7 +2,7 @@
   <validation-observer v-slot="{ handleSubmit }" slim>
     <form
       tag="form"
-      name="book"
+      name="booking-home"
       action="/thanks"
       method="post"
       novalidate
@@ -10,8 +10,8 @@
       netlify-honeypot="bot-field"
       @submit.prevent="handleSubmit(submit)"
     >
+      <input type="hidden" name="form-name" value="booking-home" />
       <div v-if="!formSubmitted">
-        <input type="hidden" name="booking-form" value="book" />
         <validation-provider v-slot="{ errors, classes }" rules="required">
           <div class="c-form-group" :class="classes">
             <label class="c-form-label" for="name">Name</label>
@@ -134,7 +134,7 @@ export default {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
-          'form-name': 'book',
+          'form-name': 'booking-home',
           ...this.bookingForm
         })
       })

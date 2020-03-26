@@ -46,17 +46,20 @@
         </ul>
       </div>
     </section-block>
+    <destinations-grid />
   </div>
 </template>
 <script>
 import HeroBanner from '~/components/home/HeroBanner'
 import SectionBlock from '~/components/Section'
 import BookingForm from '~/components/BookingForm'
+import DestinationsGrid from '~/components/DestinationsGrid'
 export default {
   components: {
     HeroBanner,
     SectionBlock,
-    BookingForm
+    BookingForm,
+    DestinationsGrid
   },
   data() {
     return {
