@@ -1,8 +1,8 @@
 <template>
   <validation-observer v-slot="{ handleSubmit }" slim>
     <form
-      tag="form"
       name="booking-home"
+      action="/thanks"
       method="post"
       novalidate
       data-netlify="true"
@@ -10,7 +10,7 @@
       @submit.prevent="handleSubmit(submit)"
     >
       <input type="hidden" name="form-name" value="booking-home" />
-      <div v-if="!formSubmitted">
+      <div v-show="!formSubmitted">
         <validation-provider v-slot="{ errors, classes }" rules="required">
           <div class="c-form-group" :class="classes">
             <label class="c-form-label" for="name">Name</label>
@@ -96,7 +96,7 @@
           </button>
         </div>
       </div>
-      <div v-else>
+      <div v-show="formSubmitted">
         Thanks!
       </div>
     </form>
