@@ -3,11 +3,10 @@
     <form
       tag="form"
       name="booking-home"
-      action="/thanks"
       method="post"
       novalidate
-      netlify
-      netlify-honeypot="bot-field"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
       @submit.prevent="handleSubmit(submit)"
     >
       <input type="hidden" name="form-name" value="booking-home" />
