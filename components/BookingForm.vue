@@ -18,7 +18,7 @@
             <input
               id="name"
               v-model="bookingForm.name"
-              v-validate="'email'"
+              name="Name"
               class="c-form-control"
               type="text"
               required
@@ -35,6 +35,7 @@
             <input
               id="email"
               v-model="bookingForm.email"
+              name="Email"
               class="c-form-control"
               type="text"
               required
@@ -48,6 +49,7 @@
             <select
               id="destination"
               v-model="bookingForm.destination"
+              name="Destination"
               class="c-form-control"
             >
               <option selected value="Greece">Greece</option>
@@ -65,6 +67,7 @@
             <select
               id="yacht"
               v-model="bookingForm.yacht"
+              name="Yacht"
               class="c-form-control"
             >
               <option selected value="Medium">Medium (Max 8 crew)</option>
@@ -80,6 +83,7 @@
             <input
               id="date"
               v-model="bookingForm.date"
+              name="Date"
               class="c-form-control"
               type="date"
               required
