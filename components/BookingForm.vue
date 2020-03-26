@@ -78,14 +78,18 @@
         <validation-provider v-slot="{ errors, classes }" rules="required">
           <div class="c-form-group" :class="classes">
             <label class="c-form-label" for="date">Date</label>
-            <input
-              id="date"
+            <flat-pickr
+              ref="picker"
               v-model="bookingForm.date"
-              name="date"
+              :config="dateConfig"
               class="c-form-control"
-              type="date"
-              required
-            />
+              placeholder="Select date"
+              @on-change="onDateChange"
+            >
+            </flat-pickr>
+            <div v-show="selectedDates.weekEnd" class="u-margin-top-tiny">
+              {{ selectedDates.weekStart }} - {{ selectedDates.weekEnd }}
+            </div>
             <span class="c-form-error">{{ errors[0] }}</span>
           </div>
         </validation-provider>
@@ -104,6 +108,7 @@
 
 <script>
 import { ValidationObserver, ValidationProvider } from 'vee-validate'
+import weekSelect from 'flatpickr/dist/plugins/weekSelect/weekSelect'
 
 export default {
   components: {
@@ -120,10 +125,41 @@ export default {
         destination: '',
         yacht: '',
         date: ''
+      },
+      selectedDates: {
+        weekStart: '',
+        weekEnd: ''
+      },
+      dateConfig: {
+        dateFormat: 'd-m-y',
+        altInput: true,
+        altFormat: this.weekStartDay,
+        locale: {
+          firstDayOfWeek: 6
+        },
+        plugins: [new weekSelect({})], //eslint-disable-line
+        // onChange: [
+        //   function(thing) {
+        //     // console.log(this.weekStartDay, this.weekEndDay)
+        //     // console.log(start, end)
+        //   }
+        // ]
+      }
+    }
+  },
+  computed: {
+    selectedDatesReadable: () => {
+      if (this.selectedDates.weekStart) {
+        // return this.selectedDates.weekStart + ' - ' + this.selectedDates.weekEnd
       }
     }
   },
   methods: {
+    onDateChange() {
+      const fp = this.$refs.picker.fp
+      this.selectedDates.weekStart = fp.weekStartDay
+      this.selectedDates.weekEnd = fp.weekEndDay
+    },
     encode(data) {
       return Object.keys(data)
         .map(

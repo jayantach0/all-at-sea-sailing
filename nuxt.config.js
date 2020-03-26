@@ -38,7 +38,11 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '@/plugins/aos', ssr: false }, '~/plugins/vee-validate'],
+  plugins: [
+    { src: '@/plugins/aos', ssr: false },
+    '~/plugins/vee-validate',
+    '~/plugins/flatpickr'
+  ],
   /*
    ** Nuxt.js dev-modules
    */
