@@ -78,17 +78,21 @@
         <validation-provider v-slot="{ errors, classes }" rules="required">
           <div class="c-form-group" :class="classes">
             <label class="c-form-label" for="date">Date</label>
-            <flat-pickr
-              ref="picker"
-              v-model="bookingForm.date"
-              :config="dateConfig"
-              class="c-form-control"
-              placeholder="Select date"
-              @on-change="onDateChange"
-            >
-            </flat-pickr>
-            <div v-show="selectedDates.weekEnd" class="u-margin-top-tiny">
-              {{ selectedDates.weekStart }} - {{ selectedDates.weekEnd }}
+            <div class="c-date-picker">
+              <flat-pickr
+                ref="picker"
+                v-model="bookingForm.date"
+                class="c-date-picker__picker c-form-control"
+                :config="dateConfig"
+                placeholder="Select date"
+                @on-change="onDateChange"
+              >
+              </flat-pickr>
+              <div
+                class="c-date-picker__value c-form-control c-form-control--fake"
+              >
+                {{ selectedDatesReadable }}
+              </div>
             </div>
             <span class="c-form-error">{{ errors[0] }}</span>
           </div>
@@ -148,10 +152,16 @@ export default {
     }
   },
   computed: {
-    selectedDatesReadable: () => {
+    selectedDatesReadable() {
+      const dateFormat = 'ddd D MMM YYYY'
       if (this.selectedDates.weekStart) {
-        // return this.selectedDates.weekStart + ' - ' + this.selectedDates.weekEnd
+        return (
+          this.$dayjs(this.selectedDates.weekStart).format(dateFormat) +
+          ' - ' +
+          this.$dayjs(this.selectedDates.weekEnd).format(dateFormat)
+        )
       }
+      return ''
     }
   },
   methods: {
@@ -188,3 +198,20 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.c-date-picker {
+  position: relative;
+  &__picker {
+    opacity: 0;
+  }
+  &__value {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+</style>

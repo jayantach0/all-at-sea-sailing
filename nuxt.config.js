@@ -54,7 +54,8 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/svg',
     '@nuxtjs/style-resources',
-    '@nuxtjs/svg-sprite'
+    '@nuxtjs/svg-sprite',
+    'nuxt-dayjs-module'
   ],
   styleResources: {
     scss: ['~assets/scss/tools/*.scss', '~assets/scss/settings/*.scss']

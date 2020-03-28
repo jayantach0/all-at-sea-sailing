@@ -47,19 +47,34 @@
       </div>
     </section-block>
     <destinations-grid />
+    <section-block>
+      <div class="o-wrapper o-wrapper--tiny">
+        <h3 class="c-heading c-heading--bordered u-text-center">
+          Send us a message
+        </h3>
+      </div>
+      <div class="o-wrapper o-wrapper--tiny">
+        <contact-form />
+      </div>
+    </section-block>
+    <site-footer />
   </div>
 </template>
 <script>
 import HeroBanner from '~/components/home/HeroBanner'
 import SectionBlock from '~/components/Section'
 import BookingForm from '~/components/BookingForm'
+import ContactForm from '~/components/ContactForm'
 import DestinationsGrid from '~/components/DestinationsGrid'
+import SiteFooter from '~/components/Footer'
 export default {
   components: {
     HeroBanner,
     SectionBlock,
     BookingForm,
-    DestinationsGrid
+    DestinationsGrid,
+    ContactForm,
+    SiteFooter
   },
   data() {
     return {

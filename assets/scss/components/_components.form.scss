@@ -10,7 +10,7 @@
 }
 
 .c-form-control {
-  height: var(--input-height);
+  min-height: var(--input-height);
   max-width: 100%;
   width: 100%;
   border: 0 none;
@@ -22,7 +22,16 @@
   outline: 0;
   transition: 0.2s ease-in-out;
   transition-property: color, background-color, border;
+
+  &--fake {
+    display: flex;
+    align-items: center;
+  }
   @at-root {
+    textarea#{&} {
+      padding-top: .75em;
+      padding-bottom: .75em;
+    }
     select#{&} {
       -webkit-appearance: none;
       -moz-appearance: none;
@@ -40,10 +49,10 @@
     }
   }
 
-  &:hover {
+  &:hover, &.is-hover {
     border-color: #a0a0a0;
   }
-  &:focus {
+  &:focus, &.is-focus {
     border-color: var(--color-primary);
     background-color: #f0f0f0;
   }

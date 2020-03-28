@@ -8,7 +8,7 @@
       v-for="(destination, index) in destinations"
       :key="destination.title"
       :to="destination.link"
-      data-aos="fade"
+      data-aos="fade-left"
       data-aos-once="true"
       :data-aos-delay="(index + 1) * 100"
       data-aos-anchor=".c-destination-grid"
@@ -76,7 +76,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 200px;
+    min-height: 250px;
     color: #fff;
     text-decoration: none;
     font-size: var(--text-default);
