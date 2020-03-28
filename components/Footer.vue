@@ -5,31 +5,31 @@
         <div class="c-footer__info">
           <ul class="o-list-inline c-footer__links">
             <li class="o-list-inline__item c-footer__link">
-              <nuxt-link to="">Home</nuxt-link>
+              <nuxt-link to="/">Home</nuxt-link>
             </li>
             <li class="o-list-inline__item c-footer__link">
-              <nuxt-link to="">Destinations</nuxt-link>
+              <nuxt-link to="/destinations">Destinations</nuxt-link>
             </li>
             <li class="o-list-inline__item c-footer__link">
-              <nuxt-link to="">Our yachts</nuxt-link>
+              <nuxt-link to="/yachts">Our yachts</nuxt-link>
             </li>
             <li class="o-list-inline__item c-footer__link">
-              <nuxt-link to="">How it works</nuxt-link>
+              <nuxt-link to="/how-it-works">How it works</nuxt-link>
             </li>
             <li class="o-list-inline__item c-footer__link">
-              <nuxt-link to="">FAQs</nuxt-link>
+              <nuxt-link to="/faqs">FAQs</nuxt-link>
             </li>
             <li class="o-list-inline__item c-footer__link">
-              <nuxt-link to="">About us</nuxt-link>
+              <nuxt-link to="/about">About us</nuxt-link>
             </li>
             <li class="o-list-inline__item c-footer__link">
-              <nuxt-link to="">Contact</nuxt-link>
+              <nuxt-link to="/contact">Contact</nuxt-link>
             </li>
             <li class="o-list-inline__item c-footer__link">
-              <nuxt-link to="">Privacy Policy</nuxt-link>
+              <nuxt-link to="/privacy">Privacy Policy</nuxt-link>
             </li>
             <li class="o-list-inline__item c-footer__link">
-              <nuxt-link to="">Terms &amp; Conditions</nuxt-link>
+              <nuxt-link to="/terms">Terms &amp; Conditions</nuxt-link>
             </li>
           </ul>
         </div>
@@ -58,6 +58,7 @@ export default {
     max-width: 150px;
   }
   &__body {
+    margin-bottom: var(--spacing);
     @include mq($from: tablet) {
       display: flex;
       flex-direction: row-reverse;
@@ -65,6 +66,7 @@ export default {
     }
   }
   &__info {
+    margin-bottom: var(--spacing);
     @include mq($from: tablet) {
       flex-grow: 1;
       text-align: right;
@@ -78,6 +80,9 @@ export default {
     margin-right: var(--spacing-small);
     @include mq($from: tablet) {
       margin-left: var(--spacing-small);
+    }
+    &:last-child {
+      margin-right: 0;
     }
   }
   a {

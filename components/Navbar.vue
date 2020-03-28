@@ -5,19 +5,27 @@
       <nav class="c-navbar__nav">
         <ul class="o-list-inline">
           <li class="o-list-inline__item c-navbar__nav-item">
-            <nuxt-link class="c-navbar__nav-link" to="">Destinations</nuxt-link>
+            <nuxt-link class="c-navbar__nav-link" to="/destinations"
+              >Destinations</nuxt-link
+            >
           </li>
           <li class="o-list-inline__item c-navbar__nav-item">
-            <nuxt-link class="c-navbar__nav-link" to="">Our Yachts</nuxt-link>
+            <nuxt-link class="c-navbar__nav-link" to="/yachts"
+              >Our Yachts</nuxt-link
+            >
           </li>
           <li class="o-list-inline__item c-navbar__nav-item">
-            <nuxt-link class="c-navbar__nav-link" to="">How it works</nuxt-link>
+            <nuxt-link class="c-navbar__nav-link" to="/how-it-works"
+              >How it works</nuxt-link
+            >
           </li>
           <li class="o-list-inline__item c-navbar__nav-item">
-            <nuxt-link class="c-navbar__nav-link" to="">FAQs</nuxt-link>
+            <nuxt-link class="c-navbar__nav-link" to="/faqs">FAQs</nuxt-link>
           </li>
           <li class="o-list-inline__item c-navbar__nav-item">
-            <nuxt-link class="c-navbar__nav-link" to="">Contact</nuxt-link>
+            <nuxt-link class="c-navbar__nav-link" to="/contact"
+              >Contact</nuxt-link
+            >
           </li>
         </ul>
       </nav>
@@ -65,17 +73,22 @@ export default {
     font-size: 0.825rem;
     text-transform: uppercase;
     @include mq($until: tablet) {
-      padding-top: var(--spacing-small);
-      padding-bottom: var(--spacing-small);
+      padding-left: var(--spacing-small);
+      padding-right: var(--spacing-small);
       margin-bottom: calc(var(--spacing) * -1);
       margin-left: calc(var(--spacing) * -1);
       margin-right: calc(var(--spacing) * -1);
       flex-grow: 1;
+      width: 100%;
       order: 3;
     }
     ul {
       margin-bottom: 0;
       text-align: center;
+      display: flex;
+      @include mq($until: tablet) {
+        justify-content: space-between;
+      }
     }
     &-item {
       margin-left: var(--spacing-tiny);
@@ -84,12 +97,19 @@ export default {
     &-link {
       display: inline-block;
       color: var(--color-primary);
-      padding: var(--spacing-tiny);
+      padding: var(--spacing) var(--spacing-small);
       text-decoration: none;
+      @include mq($from: tablet) {
+        padding: var(--spacing-tiny);
+      }
       &:focus,
-      &:hover {
+      &:hover,
+      &.is-active {
         color: var(--color-primary-light);
         text-decoration: underline;
+      }
+      &.is-active {
+        font-weight: bold;
       }
     }
   }

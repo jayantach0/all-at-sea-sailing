@@ -3,12 +3,17 @@
     class="c-destination-grid"
     :class="{ 'c-destination-grid--large': titlePage }"
   >
-    <div v-if="titlePage" class="c-destination-grid__item">Destinations</div>
+    <div
+      v-if="titlePage"
+      class="c-destination-grid__item c-destination-grid__item--title"
+    >
+      Destinations
+    </div>
     <nuxt-link
       v-for="(destination, index) in destinations"
       :key="destination.title"
       :to="destination.link"
-      data-aos="fade-left"
+      :data-aos="titlePage ? 'fade' : 'fade-left'"
       data-aos-once="true"
       :data-aos-delay="(index + 1) * 100"
       data-aos-anchor=".c-destination-grid"
@@ -21,6 +26,7 @@
 </template>
 
 <script>
+import AOS from 'aos'
 export default {
   props: {
     titlePage: {
@@ -34,7 +40,7 @@ export default {
         {
           title: 'Greece',
           link: '/destinations/greece',
-          image: require('~/assets/images/croatia.jpg')
+          image: require('~/assets/images/greece.jpg')
         },
         {
           title: 'Croatia',
@@ -44,26 +50,30 @@ export default {
         {
           title: 'Turkey',
           link: '/destinations/turkey',
-          image: require('~/assets/images/croatia.jpg')
+          image: require('~/assets/images/turkey.jpg')
         },
         {
           title: 'Montenegro',
           link: '/destinations/montenegro',
-          image: require('~/assets/images/croatia.jpg')
+          image: require('~/assets/images/montenegro.jpg')
         },
         {
           title: 'Italy',
           link: '/destinations/italy',
-          image: require('~/assets/images/croatia.jpg')
+          image: require('~/assets/images/italy.jpg')
         }
       ]
     }
+  },
+  mounted() {
+    AOS.refresh()
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .c-destination-grid {
+  $self: &;
   background-color: var(--color-primary);
   @include mq($from: smallTablet) {
     display: flex;
@@ -82,6 +92,27 @@ export default {
     font-size: var(--text-default);
     position: relative;
     overflow: hidden;
+
+    &--title {
+      padding: var(--spacing);
+      @include mq($until: smallTablet) {
+        min-height: 0;
+      }
+    }
+
+    #{$self}--large & {
+      min-width: 50%;
+      @include mq($from: smallTablet) {
+        min-height: 33vh;
+      }
+      @include mq($from: tablet) {
+        min-height: 40vh;
+      }
+      @include mq($from: wide) {
+        min-height: 45vh;
+        min-width: 33.33%;
+      }
+    }
   }
 
   &__img {
@@ -100,6 +131,7 @@ export default {
   &__item:hover &__img {
     opacity: 1;
     transform: scale(1.25);
+    transition: opacity 0.2s ease-out, transform 10s ease;
   }
 
   &__btn {
@@ -113,6 +145,9 @@ export default {
     text-align: center;
     @include mq($from: smallTablet) {
       min-width: 60%;
+    }
+    #{$self}--large & {
+      min-width: 200px;
     }
   }
 }

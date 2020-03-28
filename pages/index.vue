@@ -57,7 +57,6 @@
         <contact-form />
       </div>
     </section-block>
-    <site-footer />
   </div>
 </template>
 <script>
@@ -66,15 +65,13 @@ import SectionBlock from '~/components/Section'
 import BookingForm from '~/components/BookingForm'
 import ContactForm from '~/components/ContactForm'
 import DestinationsGrid from '~/components/DestinationsGrid'
-import SiteFooter from '~/components/Footer'
 export default {
   components: {
     HeroBanner,
     SectionBlock,
     BookingForm,
     DestinationsGrid,
-    ContactForm,
-    SiteFooter
+    ContactForm
   },
   data() {
     return {
