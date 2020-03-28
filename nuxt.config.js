@@ -1,3 +1,4 @@
+import imageminWebp from 'imagemin-webp'
 export default {
   mode: 'universal',
   /*
@@ -41,7 +42,8 @@ export default {
   plugins: [
     { src: '@/plugins/aos', ssr: false },
     '~/plugins/vee-validate',
-    '~/plugins/flatpickr'
+    '~/plugins/flatpickr',
+    '~/plugins/lazyload'
   ],
   /*
    ** Nuxt.js dev-modules
@@ -55,7 +57,14 @@ export default {
     '@nuxtjs/svg',
     '@nuxtjs/style-resources',
     '@nuxtjs/svg-sprite',
-    'nuxt-dayjs-module'
+    'nuxt-dayjs-module',
+    [
+      'nuxt-imagemin',
+      {
+        optipng: { optimizationLevel: 5 },
+        plugins: [imageminWebp({ quality: 50 })]
+      }
+    ]
   ],
   styleResources: {
     scss: ['~assets/scss/tools/*.scss', '~assets/scss/settings/*.scss']

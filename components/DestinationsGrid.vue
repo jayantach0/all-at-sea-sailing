@@ -19,7 +19,18 @@
       data-aos-anchor=".c-destination-grid"
       class="c-destination-grid__item"
     >
-      <img class="c-destination-grid__img" :src="destination.image" />
+      <picture v-lazy-container="{ selector: 'img' }">
+        <source :srcSet="destination.imageWebp" type="image/webp" />
+        <source
+          :srcSet="destination.image + ', ' + destination.image2x + ' 2x'"
+          type="image/jpeg"
+        />
+        <img
+          class="c-destination-grid__img"
+          :src="destination.image"
+          :loading="destination.loading"
+        />
+      </picture>
       <div class="c-destination-grid__btn">{{ destination.title }}</div>
     </nuxt-link>
   </div>
@@ -40,27 +51,42 @@ export default {
         {
           title: 'Greece',
           link: '/destinations/greece',
-          image: require('~/assets/images/greece.jpg')
+          loading: require('~/assets/images/greece-lqip.jpg'),
+          image: require('~/assets/images/greece.jpg'),
+          image2x: require('~/assets/images/greece@2x.jpg'),
+          imageWebp: require('~/assets/images/greece@2x.webp')
         },
         {
           title: 'Croatia',
           link: '/destinations/croatia',
-          image: require('~/assets/images/croatia.jpg')
+          loading: require('~/assets/images/croatia-lqip.jpg'),
+          image: require('~/assets/images/croatia.jpg'),
+          image2x: require('~/assets/images/croatia@2x.jpg'),
+          imageWebp: require('~/assets/images/croatia@2x.webp')
         },
         {
           title: 'Turkey',
           link: '/destinations/turkey',
-          image: require('~/assets/images/turkey.jpg')
+          loading: require('~/assets/images/turkey-lqip.jpg'),
+          image: require('~/assets/images/turkey.jpg'),
+          image2x: require('~/assets/images/turkey@2x.jpg'),
+          imageWebp: require('~/assets/images/turkey@2x.webp')
         },
         {
           title: 'Montenegro',
           link: '/destinations/montenegro',
-          image: require('~/assets/images/montenegro.jpg')
+          loading: require('~/assets/images/montenegro-lqip.jpg'),
+          image: require('~/assets/images/montenegro.jpg'),
+          image2x: require('~/assets/images/montenegro@2x.jpg'),
+          imageWebp: require('~/assets/images/montenegro@2x.webp')
         },
         {
           title: 'Italy',
           link: '/destinations/italy',
-          image: require('~/assets/images/italy.jpg')
+          loading: require('~/assets/images/italy-lqip.jpg'),
+          image: require('~/assets/images/italy.jpg'),
+          image2x: require('~/assets/images/italy@2x.jpg'),
+          imageWebp: require('~/assets/images/italy@2x.webp')
         }
       ]
     }
@@ -72,6 +98,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+img[lazy='loading'] {
+  filter: blur(10px);
+}
 .c-destination-grid {
   $self: &;
   background-color: var(--color-primary);
