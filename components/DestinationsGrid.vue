@@ -5,6 +5,9 @@
   >
     <div
       v-if="titlePage"
+      :data-aos="titlePage ? 'fade' : 'fade-left'"
+      data-aos-once="true"
+      data-aos-anchor=".c-destination-grid"
       class="c-destination-grid__item c-destination-grid__item--title"
     >
       Destinations
@@ -127,6 +130,9 @@ img[lazy='loading'] {
       @include mq($until: smallTablet) {
         min-height: 0;
       }
+      @include mq($from: tablet) {
+        font-size: 2em;
+      }
     }
 
     #{$self}--large & {
@@ -137,7 +143,7 @@ img[lazy='loading'] {
       @include mq($from: tablet) {
         min-height: 40vh;
       }
-      @include mq($from: wide) {
+      @include mq($from: extraWide) {
         min-height: 45vh;
         min-width: 33.33%;
       }
