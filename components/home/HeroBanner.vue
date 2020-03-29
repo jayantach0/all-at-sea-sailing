@@ -78,7 +78,7 @@ export default {
     }
     &-inner {
       @include mq($from: tablet) {
-        max-width: 450px;
+        max-width: 420px;
         margin-left: auto;
       }
       @include mq($until: tablet) {

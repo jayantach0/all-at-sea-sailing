@@ -3,24 +3,13 @@
     <hero-banner :title="heroTitle" :body="heroBody" />
     <section-block>
       <div class="o-wrapper o-wrapper--tiny u-text-center">
-        <h2
-          class="u-h4 u-color-primary"
-          data-aos="fade-up"
-          data-aos-once="true"
-        >
+        <h2 class="u-h4 u-color-primary">
           Chartering a yacht has never been so easy! Stress free, every step of
           the way.
         </h2>
-        <p data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
-          Simply answer these 3 questions and get a quote...
-        </p>
+        <p>Fill out the form below and get a quote...</p>
       </div>
-      <div
-        class="o-wrapper o-wrapper--x-tiny"
-        data-aos="fade-up"
-        data-aos-once="true"
-        data-aos-delay="100"
-      >
+      <div class="o-wrapper o-wrapper--x-tiny">
         <booking-form />
       </div>
     </section-block>
@@ -49,7 +38,7 @@
     <destinations-grid />
     <section-block>
       <div class="o-wrapper o-wrapper--tiny">
-        <h3 class="c-heading c-heading--bordered u-text-center">
+        <h3 class="c-heading c-heading--bordered u-text-center u-color-primary">
           Send us a message
         </h3>
       </div>

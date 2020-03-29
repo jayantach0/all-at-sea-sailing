@@ -79,7 +79,7 @@ export default {
     &-inner {
       @include mq($from: tablet) {
         width: 100%;
-        max-width: 450px;
+        max-width: 420px;
         padding-right: var(--spacing);
         margin-left: auto;
       }

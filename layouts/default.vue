@@ -18,5 +18,6 @@ export default {
 <style>
 body {
   overflow-x: hidden;
+  background-color: var(--color-primary);
 }
 </style>

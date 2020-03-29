@@ -20,6 +20,7 @@ module.exports = {
   // add your custom rules here
   rules: {
     'no-console': 0,
-    'no-useless-escape': 0
+    'no-useless-escape': 0,
+    'vue/no-v-html': 'off'
   }
 }

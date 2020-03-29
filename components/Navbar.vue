@@ -49,6 +49,8 @@ export default {
   background-color: #fff;
   padding: var(--spacing) var(--spacing);
   &__inner {
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
