@@ -22,13 +22,12 @@ export default {
   data() {
     return {
       title: 'Croatia',
-      headerContent: `<p>Discover one of the worlds top sailing destinations with over 6000 islands, captivating history, immersive culture, crystal blue waters and breathtaking sunsets.</p>
-        <p>Spend your time island hopping, tasting the local cuisine, swimming in secret coves and exploring seaside villages.</p>`,
+      headerContent: `<p>Immerse yourself in fresh local dishes, historical towns, picturesque beaches and coves as well as some of the best nightlife on offer. Sail through the Adriatic sea soaking up the sun, taking in the breathtaking landscapes while deciding which of the many UNESCO World Heritage Sites to visit each day.</p>`,
       banner: {
-        loading: require('~/assets/images/greece-lqip.jpg'),
-        image: require('~/assets/images/greece.jpg'),
-        image2x: require('~/assets/images/greece@2x.jpg'),
-        imageWebp: require('~/assets/images/greece@2x.webp')
+        loading: require('~/assets/images/croatia-banner-lqip.jpg'),
+        image: require('~/assets/images/croatia-banner.jpg'),
+        image2x: require('~/assets/images/croatia-banner@2x.jpg'),
+        imageWebp: require('~/assets/images/croatia-banner@2x.webp')
       },
       start: {
         title: 'Split',
@@ -36,6 +35,7 @@ export default {
           Split’s many bars and clubs. Split has a great mix of nightlife and 
           beauty. Your trip starts at the nearby Trogir Marina.`
       },
+      map: require('~/assets/images/croatia-map.svg'),
       locations: [
         {
           title: 'Milna, Brac Island',
@@ -65,25 +65,45 @@ export default {
           title: 'Hvar Old Town',
           description:
             'A bustling town steeped in history and the best nightlife in Croatia.',
-          image: {}
+          image: {
+            loading: require('~/assets/images/greece-lqip.jpg'),
+            image: require('~/assets/images/greece.jpg'),
+            image2x: require('~/assets/images/greece@2x.jpg'),
+            imageWebp: require('~/assets/images/greece@2x.webp')
+          }
         },
         {
           title: 'Stari Grad Plain',
           description:
             'A UNESCO World Heritage Site, sample the finest wine and olives at this organic farm in the Croatian countryside.',
-          image: {}
+          image: {
+            loading: require('~/assets/images/greece-lqip.jpg'),
+            image: require('~/assets/images/greece.jpg'),
+            image2x: require('~/assets/images/greece@2x.jpg'),
+            imageWebp: require('~/assets/images/greece@2x.webp')
+          }
         },
         {
           title: 'Vis Island',
           description:
             'A Croatian dream, explore this unspoiled island and its choice of idyllic beaches, mesmirising caves and captivating history.',
-          image: {}
+          image: {
+            loading: require('~/assets/images/greece-lqip.jpg'),
+            image: require('~/assets/images/greece.jpg'),
+            image2x: require('~/assets/images/greece@2x.jpg'),
+            imageWebp: require('~/assets/images/greece@2x.webp')
+          }
         },
         {
           title: 'Golden Horn Beach on Brac',
           description:
             'Possibly the worlds nicest beach, it extends 500 metres out to crystal clear sea’s and interestingly changes direction at its tip due to changing currents.',
-          image: {}
+          image: {
+            loading: require('~/assets/images/greece-lqip.jpg'),
+            image: require('~/assets/images/greece.jpg'),
+            image2x: require('~/assets/images/greece@2x.jpg'),
+            imageWebp: require('~/assets/images/greece@2x.webp')
+          }
         }
       ]
     }

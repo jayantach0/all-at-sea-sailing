@@ -21,23 +21,7 @@
                 </div>
               </div>
               <div class="c-destination-description__map">
-                <img src="@/assets/images/greece-map.png" />
-              </div>
-              <div v-if="map.image" class="c-destination-description__map">
-                <img src="@/assets/images/greece-map.png" />
-                <!-- <picture v-lazy-container="{ selector: 'img' }">
-                  <source :srcSet="map.imageWebp" type="image/webp" />
-                  <source
-                    :srcSet="map.image + ', ' + map.image2x + ' 2x'"
-                    type="image/jpeg"
-                  />
-                  <img
-                    v-if="map.image"
-                    class="c-destination-grid__img"
-                    :src="map.image"
-                    :loading="map.loading"
-                  />
-                </picture> -->
+                <img class="c-destination-grid__img" :src="map" />
               </div>
             </div>
             <div class="o-layout__item u-1/2@tablet">
@@ -58,7 +42,10 @@
               <p>{{ start.description }}</p>
               <div class="u-color-branding u-margin-top-large">
                 <p>Possible locations during the week</p>
-                <div v-for="location in locations" :key="location">
+                <div
+                  v-for="(location, index) in locations"
+                  :key="`location-${index}`"
+                >
                   <h4 class="u-margin-bottom-small">{{ location.title }}</h4>
                   <div v-html="location.description"></div>
                 </div>
@@ -80,8 +67,8 @@
         </h3>
         <div class="o-layout o-layout--huge">
           <div
-            v-for="highlight in highlights"
-            :key="highlight"
+            v-for="(highlight, index) in highlights"
+            :key="`highlight-${index}`"
             class="o-layout__item u-1/2@tablet"
           >
             <div class="o-block u-margin-bottom-huge">
@@ -136,10 +123,8 @@ export default {
       }
     },
     map: {
-      type: Object,
-      default() {
-        return {}
-      }
+      type: String,
+      default: ''
     },
     highlights: {
       type: Array,
@@ -159,9 +144,9 @@ export default {
     @include mq($from: tablet) {
       flex-grow: 1;
       position: sticky;
-      top: 0;
+      top: var(--spacing);
       img {
-        max-height: 100vh;
+        max-height: calc(100vh - var(--spacing) - var(--spacing));
       }
     }
   }

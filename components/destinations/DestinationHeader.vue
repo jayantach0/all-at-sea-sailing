@@ -58,11 +58,12 @@ export default {
 <style lang="scss" scoped>
 .c-destination-header {
   background-color: var(--color-primary);
-  min-height: 60vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   @include mq($from: tablet) {
     flex-direction: row;
+    min-height: 70vh;
   }
   &__body {
     color: #fff;
