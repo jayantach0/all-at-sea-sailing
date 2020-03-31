@@ -1,62 +1,23 @@
 <template>
-  <div class="c-home-hero">
-    <div class="c-home-hero__body">
-      <div class="c-home-hero__body-inner">
-        <img
-          class="c-home-hero__logo"
-          :src="require('~/assets/images/logo-circle.svg')"
-          data-aos="fade-up"
-          data-aos-once="true"
-          data-aos-delay="200"
-        />
+  <div class="c-page-banner">
+    <div class="c-page-banner__body">
+      <div class="c-page-banner__body-inner">
         <div>
-          <h1
-            class="c-home-hero__title"
-            data-aos="fade-up"
-            data-aos-once="true"
-            data-aos-delay="250"
-          >
-            Charter your own yacht in some of the Mediterraneans most beautiful
-            locations.
-          </h1>
-          <p data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
-            We provide the skipper, so you can sit back and relax or learn to
-            sail, it’s up you! Either way you’ll fully enjoy a holiday of a
-            lifetime.
-          </p>
-          <p data-aos="fade-up" data-aos-once="true" data-aos-delay="350">
-            <nuxt-link to="/" class="c-btn">
-              Watch Trailer
-            </nuxt-link>
-          </p>
+          <slot />
         </div>
       </div>
     </div>
     <div
-      class="c-home-hero__banner"
+      class="c-page-banner__image"
       data-aos="fade"
       data-aos-once="true"
       data-aos-duration="1250"
     ></div>
   </div>
 </template>
-<script>
-export default {
-  props: {
-    title: {
-      type: String,
-      default: ''
-    },
-    body: {
-      type: String,
-      default: ''
-    }
-  }
-}
-</script>
 
 <style lang="scss">
-.c-home-hero {
+.c-page-banner {
   background-color: var(--color-primary);
   min-height: 75vh;
   display: flex;
@@ -92,7 +53,7 @@ export default {
     }
   }
 
-  &__banner {
+  &__image {
     background-image: url('~assets/images/hero-banner.jpg');
     background-size: cover;
     background-position: 50% 50%;
