@@ -2,7 +2,7 @@
   <div class="c-page-hero">
     <div class="o-wrapper">
       <div class="o-pack o-pack--center">
-        <div class="o-pack__item o-pack__item--top u-padding-right-huge">
+        <div class="o-pack__item o-pack__item--top">
           <img
             class="c-page-hero__logo"
             :src="require('~/assets/images/logo-circle.svg')"
@@ -30,9 +30,11 @@
   color: #fff;
 
   &__logo {
-    max-width: 125px;
+    width: 100px;
+    margin-right: var(--spacing-large);
     @include mq($from: tablet) {
-      max-width: 150px;
+      width: 150px;
+      margin-right: var(--spacing-huge);
     }
   }
 
