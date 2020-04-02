@@ -49,6 +49,10 @@
       flex-basis: 0;
     }
 
+    &--top {
+      align-self: flex-start;
+    }
+
     // Spacing
     #{$self}--tiny & {
       &:not(:first-child) {
