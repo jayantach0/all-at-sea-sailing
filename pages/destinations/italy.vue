@@ -62,10 +62,10 @@ export default {
           description:
             'Sample the sweet wine of Salina while taking in the lush green surroundings. Home to the yachting elite, beautiful buildings and luxurious restaurants.',
           image: {
-            loading: require('~/assets/images/greece-lqip.jpg'),
-            image: require('~/assets/images/greece.jpg'),
-            image2x: require('~/assets/images/greece@2x.jpg'),
-            imageWebp: require('~/assets/images/greece@2x.webp')
+            loading: require('~/assets/images/italy-salina-lqip.jpg'),
+            image: require('~/assets/images/italy-salina.jpg'),
+            image2x: require('~/assets/images/italy-salina@2x.jpg'),
+            imageWebp: require('~/assets/images/italy-salina@2x.webp')
           }
         },
         {
@@ -73,10 +73,10 @@ export default {
           description:
             'Stroll the stylish Panarea promenade, soak up the sun while sipping cocktails or simply lounge on one of the beaches on offer.',
           image: {
-            loading: require('~/assets/images/greece-banner-lqip.jpg'),
-            image: require('~/assets/images/greece-banner.jpg'),
-            image2x: require('~/assets/images/greece-banner@2x.jpg'),
-            imageWebp: require('~/assets/images/greece-banner@2x.webp')
+            loading: require('~/assets/images/italy-panarea-lqip.jpg'),
+            image: require('~/assets/images/italy-panarea.jpg'),
+            image2x: require('~/assets/images/italy-panarea@2x.jpg'),
+            imageWebp: require('~/assets/images/italy-panarea@2x.webp')
           }
         },
         {
@@ -84,10 +84,10 @@ export default {
           description:
             'Sail around this rare natural wonder and witness the most active volcano in Europe. Stromboli. Nicknamed the lighthouse of the Mediterranean, famous for its incandescent nighttime explosions, enjoy hiking to the top, or spend the day snorkelling the crystal clear waters surrounding.',
           image: {
-            loading: require('~/assets/images/greece-lqip.jpg'),
-            image: require('~/assets/images/greece.jpg'),
-            image2x: require('~/assets/images/greece@2x.jpg'),
-            imageWebp: require('~/assets/images/greece@2x.webp')
+            loading: require('~/assets/images/italy-stromboli-lqip.jpg'),
+            image: require('~/assets/images/italy-stromboli.jpg'),
+            image2x: require('~/assets/images/italy-stromboli@2x.jpg'),
+            imageWebp: require('~/assets/images/italy-stromboli@2x.webp')
           }
         },
         {
@@ -95,10 +95,10 @@ export default {
           description:
             'The largest cave of the Aeolian, located on Isola Filicudi. Admire the sunlight bouncing off the crystal blue water while taking in the surroundings.',
           image: {
-            loading: require('~/assets/images/greece-lqip.jpg'),
-            image: require('~/assets/images/greece.jpg'),
-            image2x: require('~/assets/images/greece@2x.jpg'),
-            imageWebp: require('~/assets/images/greece@2x.webp')
+            loading: require('~/assets/images/italy-grotta-lqip.jpg'),
+            image: require('~/assets/images/italy-grotta.jpg'),
+            image2x: require('~/assets/images/italy-grotta@2x.jpg'),
+            imageWebp: require('~/assets/images/italy-grotta@2x.webp')
           }
         }
       ]

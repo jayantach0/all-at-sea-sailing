@@ -66,10 +66,10 @@ export default {
           description:
             'A bustling town steeped in history and the best nightlife in Croatia.',
           image: {
-            loading: require('~/assets/images/greece-lqip.jpg'),
-            image: require('~/assets/images/greece.jpg'),
-            image2x: require('~/assets/images/greece@2x.jpg'),
-            imageWebp: require('~/assets/images/greece@2x.webp')
+            loading: require('~/assets/images/croatia-hvar-lqip.jpg'),
+            image: require('~/assets/images/croatia-hvar.jpg'),
+            image2x: require('~/assets/images/croatia-hvar@2x.jpg'),
+            imageWebp: require('~/assets/images/croatia-hvar@2x.webp')
           }
         },
         {
@@ -77,10 +77,10 @@ export default {
           description:
             'A UNESCO World Heritage Site, sample the finest wine and olives at this organic farm in the Croatian countryside.',
           image: {
-            loading: require('~/assets/images/greece-lqip.jpg'),
-            image: require('~/assets/images/greece.jpg'),
-            image2x: require('~/assets/images/greece@2x.jpg'),
-            imageWebp: require('~/assets/images/greece@2x.webp')
+            loading: require('~/assets/images/croatia-stari-grad-plain-lqip.jpg'),
+            image: require('~/assets/images/croatia-stari-grad-plain.jpg'),
+            image2x: require('~/assets/images/croatia-stari-grad-plain@2x.jpg'),
+            imageWebp: require('~/assets/images/croatia-stari-grad-plain@2x.webp')
           }
         },
         {
@@ -88,10 +88,10 @@ export default {
           description:
             'A Croatian dream, explore this unspoiled island and its choice of idyllic beaches, mesmirising caves and captivating history.',
           image: {
-            loading: require('~/assets/images/greece-lqip.jpg'),
-            image: require('~/assets/images/greece.jpg'),
-            image2x: require('~/assets/images/greece@2x.jpg'),
-            imageWebp: require('~/assets/images/greece@2x.webp')
+            loading: require('~/assets/images/croatia-vis-lqip.jpg'),
+            image: require('~/assets/images/croatia-vis.jpg'),
+            image2x: require('~/assets/images/croatia-vis@2x.jpg'),
+            imageWebp: require('~/assets/images/croatia-vis@2x.webp')
           }
         },
         {
@@ -99,10 +99,10 @@ export default {
           description:
             'Possibly the worlds nicest beach, it extends 500 metres out to crystal clear sea’s and interestingly changes direction at its tip due to changing currents.',
           image: {
-            loading: require('~/assets/images/greece-lqip.jpg'),
-            image: require('~/assets/images/greece.jpg'),
-            image2x: require('~/assets/images/greece@2x.jpg'),
-            imageWebp: require('~/assets/images/greece@2x.webp')
+            loading: require('~/assets/images/croatia-golden-horn-lqip.jpg'),
+            image: require('~/assets/images/croatia-golden-horn.jpg'),
+            image2x: require('~/assets/images/croatia-golden-horn@2x.jpg'),
+            imageWebp: require('~/assets/images/croatia-golden-horn@2x.webp')
           }
         }
       ]

@@ -64,10 +64,10 @@ export default {
           description:
             'Explore this UNESCO World Heritage site steeped in medieval architecture and history.',
           image: {
-            loading: require('~/assets/images/greece-lqip.jpg'),
-            image: require('~/assets/images/greece.jpg'),
-            image2x: require('~/assets/images/greece@2x.jpg'),
-            imageWebp: require('~/assets/images/greece@2x.webp')
+            loading: require('~/assets/images/montenegro-kotor-lqip.jpg'),
+            image: require('~/assets/images/montenegro-kotor.jpg'),
+            image2x: require('~/assets/images/montenegro-kotor@2x.jpg'),
+            imageWebp: require('~/assets/images/montenegro-kotor@2x.webp')
           }
         },
         {
@@ -75,10 +75,10 @@ export default {
           description:
             'A medieval old town with cobbled streets, cafes and boutiques. Known for its choice of beaches, lively nightlife and historical sites.',
           image: {
-            loading: require('~/assets/images/greece-lqip.jpg'),
-            image: require('~/assets/images/greece.jpg'),
-            image2x: require('~/assets/images/greece@2x.jpg'),
-            imageWebp: require('~/assets/images/greece@2x.webp')
+            loading: require('~/assets/images/montenegro-budva-lqip.jpg'),
+            image: require('~/assets/images/montenegro-budva.jpg'),
+            image2x: require('~/assets/images/montenegro-budva@2x.jpg'),
+            imageWebp: require('~/assets/images/montenegro-budva@2x.webp')
           }
         },
         {
@@ -86,10 +86,10 @@ export default {
           description:
             'Explore the breathtaking landscape of Montenegro, with a choice of many hikes and trails, enjoy spectacular views of the Adriatic coastline.',
           image: {
-            loading: require('~/assets/images/greece-lqip.jpg'),
-            image: require('~/assets/images/greece.jpg'),
-            image2x: require('~/assets/images/greece@2x.jpg'),
-            imageWebp: require('~/assets/images/greece@2x.webp')
+            loading: require('~/assets/images/montenegro-mountains-lqip.jpg'),
+            image: require('~/assets/images/montenegro-mountains.jpg'),
+            image2x: require('~/assets/images/montenegro-mountains@2x.jpg'),
+            imageWebp: require('~/assets/images/montenegro-mountains@2x.webp')
           }
         },
         {
@@ -97,10 +97,10 @@ export default {
           description:
             'Snorkel with the famous abandoned fishing shipwreck as well as swimming in some of the best secluded bays.',
           image: {
-            loading: require('~/assets/images/greece-lqip.jpg'),
-            image: require('~/assets/images/greece.jpg'),
-            image2x: require('~/assets/images/greece@2x.jpg'),
-            imageWebp: require('~/assets/images/greece@2x.webp')
+            loading: require('~/assets/images/montenegro-herceg-lqip.jpg'),
+            image: require('~/assets/images/montenegro-herceg.jpg'),
+            image2x: require('~/assets/images/montenegro-herceg@2x.jpg'),
+            imageWebp: require('~/assets/images/montenegro-herceg@2x.webp')
           }
         }
       ]
