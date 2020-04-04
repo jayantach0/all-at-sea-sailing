@@ -30,7 +30,7 @@
         </ul>
       </nav>
       <div class="c-navbar__cta">
-        <nuxt-link class="c-btn" to="">Book Now</nuxt-link>
+        <nuxt-link class="c-btn" to="/book">Book Now</nuxt-link>
       </div>
     </div>
   </div>

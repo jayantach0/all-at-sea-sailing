@@ -32,6 +32,7 @@
               <nuxt-link to="/terms">Terms &amp; Conditions</nuxt-link>
             </li>
           </ul>
+          <trustpilot class="c-trustpilot" />
         </div>
         <div class="c-footer__branding">
           <logo color="brand" />
@@ -42,9 +43,11 @@
 </template>
 <script>
 import logo from '~/components/Logo.vue'
+import trustpilot from '~/assets/images/trustpilot-white.svg?inline'
 export default {
   components: {
-    logo
+    logo,
+    trustpilot
   }
 }
 </script>
@@ -92,5 +95,9 @@ export default {
       color: #fff;
     }
   }
+}
+.c-trustpilot {
+  margin-top: var(--spacing-small);
+  max-width: 80px;
 }
 </style>

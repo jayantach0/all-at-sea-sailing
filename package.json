@@ -14,7 +14,6 @@
     "@nuxtjs/eslint-module": "^1.1.0",
     "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/svg": "^0.1.6",
-    "@nuxtjs/svg-sprite": "^0.4.10",
     "aos": "^2.3.4",
     "babel-eslint": "^10.1.0",
     "core-js": "^2.6.5",

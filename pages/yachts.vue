@@ -56,9 +56,8 @@
             class="o-pack o-layout__item u-1/2@tablet u-margin-bottom"
           >
             <div class="o-pack__item u-padding-right-large">
-              <svg-icon
-                name="checkmark"
-                class="c-icon--block c-icon--large c-icon--circled"
+              <icon-checkmark
+                class="c-icon c-icon--block c-icon--large c-icon--circled"
               />
             </div>
             <div class="o-pack__item">
@@ -82,10 +81,12 @@
 <script>
 import PageHero from '~/components/PageHero'
 import SectionBlock from '~/components/Section'
+import iconCheckmark from '~/assets/images/icon-checkmark.svg?inline'
 export default {
   components: {
     PageHero,
-    SectionBlock
+    SectionBlock,
+    iconCheckmark
   },
   data() {
     return {

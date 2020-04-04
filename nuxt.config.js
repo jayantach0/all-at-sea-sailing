@@ -57,7 +57,6 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/svg',
     '@nuxtjs/style-resources',
-    '@nuxtjs/svg-sprite',
     'nuxt-dayjs-module',
     [
       'nuxt-imagemin',
@@ -69,9 +68,6 @@ export default {
   ],
   styleResources: {
     scss: ['~assets/scss/tools/*.scss', '~assets/scss/settings/*.scss']
-  },
-  svgSprite: {
-    elementClass: 'c-icon'
   },
   /*
    ** Build configuration

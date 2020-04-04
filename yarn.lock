@@ -1219,7 +1219,7 @@
     glob-all "^3.1.0"
     sass-resources-loader "^2.0.0"
 
-"@nuxtjs/svg-sprite@^0.4.10":
+"@nuxtjs/svg-sprite@^0.4.7":
   version "0.4.10"
   resolved "https://registry.yarnpkg.com/@nuxtjs/svg-sprite/-/svg-sprite-0.4.10.tgz#fc67af7f5f225c8f5c3cfc7d8044ca55b7115d79"
   integrity sha512-RTNOTeNZzJ2wTD/AfFZnk0fAefmx4h2T9PF03uNT87TnIn16CyLLLwR58I3D9IMweK1arM1qXdIMoky3oI1JQw==

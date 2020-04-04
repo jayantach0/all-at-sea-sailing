@@ -20,4 +20,8 @@ body {
   overflow-x: hidden;
   background-color: var(--color-primary);
 }
+
+a {
+  color: var(--color-primary);
+}
 </style>

@@ -34,9 +34,8 @@
                     {{ item.question }}
                   </div>
                   <div class="o-pack__item o-pack__item--shrink">
-                    <svg-icon
-                      name="chevron-down"
-                      class="c-faq__indicator c-icon--block c-icon--standard"
+                    <icon-chevron-down
+                      class="c-faq__indicator c-icon c-icon--block c-icon--standard"
                     />
                   </div>
                 </div>
@@ -56,11 +55,13 @@
 import SlideToggle from 'vue-slide-up-down'
 import PageHero from '~/components/PageHero'
 import SectionBlock from '~/components/Section'
+import iconChevronDown from '~/assets/images/icon-chevron-down.svg?inline'
 export default {
   components: {
     PageHero,
     SectionBlock,
-    SlideToggle
+    SlideToggle,
+    iconChevronDown
   },
   data() {
     return {

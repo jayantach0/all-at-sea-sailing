@@ -25,9 +25,8 @@
             class="o-pack o-pack--center o-layout__item u-1/2@tablet u-margin-bottom"
           >
             <span class="o-pack__item u-padding-right-small">
-              <svg-icon
-                name="checkmark"
-                class="c-icon--block c-icon--large c-icon--circled"
+              <icon-checkmark
+                class="c-icon c-icon--block c-icon--large c-icon--circled"
               />
             </span>
             <span class="o-pack__item">{{ item }}</span>
@@ -54,13 +53,15 @@ import SectionBlock from '~/components/Section'
 import BookingForm from '~/components/BookingForm'
 import ContactForm from '~/components/ContactForm'
 import DestinationsGrid from '~/components/DestinationsGrid'
+import iconCheckmark from '~/assets/images/icon-checkmark.svg?inline'
 export default {
   components: {
     HeroBanner,
     SectionBlock,
     BookingForm,
     DestinationsGrid,
-    ContactForm
+    ContactForm,
+    iconCheckmark
   },
   data() {
     return {
