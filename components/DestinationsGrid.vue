@@ -28,6 +28,7 @@
           :srcSet="destination.image + ', ' + destination.image2x + ' 2x'"
           type="image/jpeg"
         />
+        <source media="(min-width: 900px)" :srcSet="destination.image2x" />
         <img
           class="c-destination-grid__img"
           :src="destination.image"

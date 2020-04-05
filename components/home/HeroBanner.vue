@@ -8,6 +8,7 @@
           data-aos="fade-up"
           data-aos-once="true"
           data-aos-delay="200"
+          data-aos-anchor=".c-home-hero"
         />
         <div>
           <h1
@@ -15,20 +16,52 @@
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="250"
+            data-aos-anchor=".c-home-hero"
           >
             Charter your own yacht in some of the Mediterraneans most beautiful
             locations.
           </h1>
-          <p data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
+          <p
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-delay="300"
+            data-aos-anchor=".c-home-hero"
+          >
             We provide the skipper, so you can sit back and relax or learn to
             sail, it’s up you! Either way you’ll fully enjoy a holiday of a
             lifetime.
           </p>
-          <p data-aos="fade-up" data-aos-once="true" data-aos-delay="350">
-            <nuxt-link to="/" class="c-btn">
+          <p
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-delay="350"
+            data-aos-anchor=".c-home-hero"
+          >
+            <button class="c-btn" @click="playTrailer()">
               Watch Trailer
-            </nuxt-link>
+            </button>
           </p>
+          <transition name="fade">
+            <div v-show="trailerPlaying" class="c-trailer">
+              <div class="c-trailer__backdrop" @click="closeTrailer()"></div>
+              <div class="c-trailer__modal">
+                <div class="c-trailer__close" @click="closeTrailer()">
+                  &times;
+                </div>
+                <video ref="trailer" class="c-trailer__video" controls>
+                  <source
+                    src="/all-at-sea-sailing-intro-sm.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="/all-at-sea-sailing-intro-sm.mp4"
+                    type="video/mp4"
+                  />
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </div>
+            </div>
+          </transition>
         </div>
       </div>
     </div>
@@ -50,6 +83,23 @@ export default {
     body: {
       type: String,
       default: ''
+    }
+  },
+  data() {
+    return {
+      trailerPlaying: false
+    }
+  },
+  methods: {
+    playTrailer() {
+      this.trailerPlaying = true
+      console.log(this.$refs)
+      this.$refs.trailer.load()
+      this.$refs.trailer.play()
+    },
+    closeTrailer() {
+      this.$refs.trailer.pause()
+      this.trailerPlaying = false
     }
   }
 }
@@ -113,5 +163,69 @@ export default {
   &__title {
     font-size: 1.5rem;
   }
+}
+
+.c-trailer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+
+  &__backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+  }
+
+  &__modal {
+    max-width: 1200px;
+    width: 90vw;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 2;
+  }
+
+  &__close {
+    position: absolute;
+    top: var(--spacing-small);
+    right: var(--spacing-small);
+    font-size: var(--text-large);
+    z-index: 2;
+    line-height: 0.5;
+    padding: var(--spacing-small);
+    transition: 0.2s ease;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+  }
+
+  &__video {
+    width: 100%;
+    height: auto;
+    display: block;
+    outline: 0;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: 0.25s;
+}
+.fade-enter,
+.fade-leave-to {
+  transform: scale(1.25);
+  opacity: 0;
 }
 </style>

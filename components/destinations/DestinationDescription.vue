@@ -86,6 +86,10 @@
                   "
                   type="image/jpeg"
                 />
+                <source
+                  media="(min-width: 900px)"
+                  :srcSet="highlight.image.image2x"
+                />
                 <img
                   v-if="highlight.image.image"
                   class="o-block__img"
