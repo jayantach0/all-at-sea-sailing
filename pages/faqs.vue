@@ -157,13 +157,13 @@ export default {
                 'Do I need a visa coming from UK / Australia / New Zealand / Canada?',
               answer:
                 'No. Please see a full list of countries exempt from visas for Greece www.visahq.co.uk. You must make sure your passport has at least six months before its expiry date.'
-            },
-            {
-              active: false,
-              question: 'It is easy to get from Athens to the marina?',
-              answer:
-                'Yes, very easy. A full description of how to get to the marina on the day of departure will be provided.'
             }
+            // {
+            //   active: false,
+            //   question: 'It is easy to get from Athens to the marina?',
+            //   answer:
+            //     'Yes, very easy. A full description of how to get to the marina on the day of departure will be provided.'
+            // }
           ]
         }
       ]
