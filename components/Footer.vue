@@ -65,7 +65,6 @@ export default {
     @include mq($from: tablet) {
       display: flex;
       flex-direction: row-reverse;
-      align-items: center;
     }
   }
   &__info {
@@ -98,6 +97,7 @@ export default {
 }
 .c-trustpilot {
   margin-top: var(--spacing-small);
-  max-width: 80px;
+  max-width: 100px;
+  height: auto;
 }
 </style>

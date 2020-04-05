@@ -1,14 +1,14 @@
 <template>
   <div class="c-home-hero">
     <div class="c-home-hero__body">
-      <div class="c-home-hero__body-inner">
+      <div class=".c-home-hero__banner">
         <img
           class="c-home-hero__logo"
           :src="require('~/assets/images/logo-circle.svg')"
           data-aos="fade-up"
           data-aos-once="true"
           data-aos-delay="200"
-          data-aos-anchor="body"
+          data-aos-anchor=".c-home-hero__banner"
         />
         <div>
           <h1
@@ -16,7 +16,7 @@
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="250"
-            data-aos-anchor="body"
+            data-aos-anchor=".c-home-hero__banner"
           >
             Charter your own yacht in some of the Mediterraneans most beautiful
             locations.
@@ -25,7 +25,7 @@
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="300"
-            data-aos-anchor="body"
+            data-aos-anchor=".c-home-hero__banner"
           >
             We provide the skipper, so you can sit back and relax or learn to
             sail, it’s up you! Either way you’ll fully enjoy a holiday of a
@@ -35,7 +35,7 @@
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="350"
-            data-aos-anchor="body"
+            data-aos-anchor=".c-home-hero__banner"
           >
             <button class="c-btn" @click="playTrailer()">
               Watch Trailer
@@ -49,6 +49,7 @@
       data-aos="fade"
       data-aos-once="true"
       data-aos-duration="1250"
+      data-aos-anchor=".c-home-hero__banner"
     ></div>
     <transition name="fade">
       <div v-show="trailerPlaying" class="c-trailer">
