@@ -24,7 +24,7 @@
             <p class="u-margin-bottom-small">
               <strong class="u-color-primary">Main Features</strong>
             </p>
-            <ul>
+            <ul class="c-yacht-features">
               <li
                 v-for="(feature, subIndex) in yacht.features"
                 :key="`yacht-${index}-feature-${subIndex}`"
@@ -33,7 +33,19 @@
               </li>
             </ul>
           </div>
-          <div class="o-layout__item u-2/3@tablet"></div>
+          <div class="o-layout__item u-2/3@tablet">
+            <div class="c-yacht-images">
+              <div class="c-yacht-images__main">
+                <img :src="yacht.mainImage" />
+              </div>
+              <div class="c-yacht-images__secondary">
+                <img :src="yacht.secondaryImage" />
+              </div>
+              <div class="c-yacht-images__tertiary">
+                <img :src="yacht.tertiaryImage" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="o-wrapper u-margin-top-large">
@@ -103,9 +115,9 @@ export default {
             'Sunbathing area',
             'Dinghy + Motor'
           ],
-          mainImage: '',
-          secondaryImage: '',
-          tertiaryImage: ''
+          mainImage: require('~/assets/images/medium-yacht@2x.png'),
+          secondaryImage: require('~/assets/images/medium-yacht-secondary@2x.jpg'),
+          tertiaryImage: require('~/assets/images/medium-yacht-tertiary@2x.jpg')
         },
         {
           name: 'Large Yacht',
@@ -119,9 +131,9 @@ export default {
             'Sunbathing area',
             'Dinghy + Motor'
           ],
-          mainImage: '',
-          secondaryImage: '',
-          tertiaryImage: ''
+          mainImage: require('~/assets/images/large-yacht@2x.png'),
+          secondaryImage: require('~/assets/images/large-yacht-secondary@2x.jpg'),
+          tertiaryImage: require('~/assets/images/large-yacht-tertiary@2x.jpg')
         },
         {
           name: 'Catamaran',
@@ -134,9 +146,9 @@ export default {
             'Sunbathing area',
             'Dinghy + Motor'
           ],
-          mainImage: '',
-          secondaryImage: '',
-          tertiaryImage: ''
+          mainImage: require('~/assets/images/catamaran@2x.png'),
+          secondaryImage: require('~/assets/images/catamaran-secondary@2x.jpg'),
+          tertiaryImage: require('~/assets/images/catamaran-tertiary@2x.jpg')
         }
       ],
       includedList: [
@@ -196,3 +208,38 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.c-yacht-features {
+  @include mq($until: tablet) {
+    columns: 2;
+  }
+}
+
+.c-yacht-images {
+  border: 1px solid #ccc;
+  display: grid;
+  grid-template-areas:
+    'main secondary'
+    'main tertiary';
+  &__main {
+    overflow: hidden;
+    grid-area: main;
+    padding: var(--spacing);
+  }
+
+  &__secondary {
+    grid-area: secondary;
+  }
+
+  &__tertiary {
+    grid-area: tertiary;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+</style>
