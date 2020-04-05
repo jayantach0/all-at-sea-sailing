@@ -8,7 +8,7 @@
           data-aos="fade-up"
           data-aos-once="true"
           data-aos-delay="200"
-          data-aos-anchor=".c-home-hero"
+          data-aos-anchor="body"
         />
         <div>
           <h1
@@ -16,7 +16,7 @@
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="250"
-            data-aos-anchor=".c-home-hero"
+            data-aos-anchor="body"
           >
             Charter your own yacht in some of the Mediterraneans most beautiful
             locations.
@@ -25,7 +25,7 @@
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="300"
-            data-aos-anchor=".c-home-hero"
+            data-aos-anchor="body"
           >
             We provide the skipper, so you can sit back and relax or learn to
             sail, it’s up you! Either way you’ll fully enjoy a holiday of a
@@ -35,33 +35,12 @@
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="350"
-            data-aos-anchor=".c-home-hero"
+            data-aos-anchor="body"
           >
             <button class="c-btn" @click="playTrailer()">
               Watch Trailer
             </button>
           </p>
-          <transition name="fade">
-            <div v-show="trailerPlaying" class="c-trailer">
-              <div class="c-trailer__backdrop" @click="closeTrailer()"></div>
-              <div class="c-trailer__modal">
-                <div class="c-trailer__close" @click="closeTrailer()">
-                  &times;
-                </div>
-                <video ref="trailer" class="c-trailer__video" controls>
-                  <source
-                    src="/all-at-sea-sailing-intro-sm.webm"
-                    type="video/webm"
-                  />
-                  <source
-                    src="/all-at-sea-sailing-intro-sm.mp4"
-                    type="video/mp4"
-                  />
-                  Sorry, your browser doesn't support embedded videos.
-                </video>
-              </div>
-            </div>
-          </transition>
         </div>
       </div>
     </div>
@@ -71,9 +50,25 @@
       data-aos-once="true"
       data-aos-duration="1250"
     ></div>
+    <transition name="fade">
+      <div v-show="trailerPlaying" class="c-trailer">
+        <div class="c-trailer__backdrop" @click="closeTrailer()"></div>
+        <div class="c-trailer__modal">
+          <div class="c-trailer__close" @click="closeTrailer()">
+            &times;
+          </div>
+          <video ref="trailer" class="c-trailer__video" controls>
+            <source src="/all-at-sea-sailing-intro-sm.webm" type="video/webm" />
+            <source src="/all-at-sea-sailing-intro-sm.mp4" type="video/mp4" />
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 <script>
+import AOS from 'aos'
 export default {
   props: {
     title: {
@@ -90,10 +85,12 @@ export default {
       trailerPlaying: false
     }
   },
+  mounted() {
+    AOS.refresh()
+  },
   methods: {
     playTrailer() {
       this.trailerPlaying = true
-      console.log(this.$refs)
       this.$refs.trailer.load()
       this.$refs.trailer.play()
     },
