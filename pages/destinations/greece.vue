@@ -25,7 +25,6 @@ export default {
       headerContent: `<p>Discover one of the worlds top sailing destinations with over 6000 islands, captivating history, immersive culture, crystal blue waters and breathtaking sunsets.</p>
         <p>Spend your time island hopping, tasting the local cuisine, swimming in secret coves and exploring seaside villages.</p>`,
       banner: {
-        loading: require('~/assets/images/greece-banner-lqip.jpg'),
         image: require('~/assets/images/greece-banner.jpg'),
         image2x: require('~/assets/images/greece-banner@2x.jpg'),
         imageWebp: require('~/assets/images/greece-banner@2x.webp')
@@ -65,7 +64,6 @@ export default {
           description:
             'Visit the cultural UNESCO World Heritage site in Athens, built in the 5th century including the renowned Parthenon.',
           image: {
-            loading: require('~/assets/images/greece-athens-lqip.jpg'),
             image: require('~/assets/images/greece-athens.jpg'),
             image2x: require('~/assets/images/greece-athens@2x.jpg'),
             imageWebp: require('~/assets/images/greece-athens@2x.webp')
@@ -76,7 +74,6 @@ export default {
           description:
             'One of the most picturesque spots of the Aegean sea islands, explore the town that artists like Leonard Cohen and Sophia Loren lived.',
           image: {
-            loading: require('~/assets/images/greece-hydra-lqip.jpg'),
             image: require('~/assets/images/greece-hydra.jpg'),
             image2x: require('~/assets/images/greece-hydra@2x.jpg'),
             imageWebp: require('~/assets/images/greece-hydra@2x.webp')
@@ -87,7 +84,6 @@ export default {
           description:
             'Visit one of the most popular archaeological sites in Greece, the Ancient well-preserved ampitheatre was constructed in the late 4th century and provides impressive views of the valley below.',
           image: {
-            loading: require('~/assets/images/greece-epidavros-lqip.jpg'),
             image: require('~/assets/images/greece-epidavros.jpg'),
             image2x: require('~/assets/images/greece-epidavros@2x.jpg'),
             imageWebp: require('~/assets/images/greece-epidavros@2x.webp')
@@ -98,7 +94,6 @@ export default {
           description:
             'Enjoy this picturesque town famous for its secluded bays, elegant atmosphere and Venetian architecture.',
           image: {
-            loading: require('~/assets/images/greece-spetses-lqip.jpg'),
             image: require('~/assets/images/greece-spetses.jpg'),
             image2x: require('~/assets/images/greece-spetses@2x.jpg'),
             imageWebp: require('~/assets/images/greece-spetses@2x.webp')

@@ -24,7 +24,6 @@ export default {
       title: 'Turkey',
       headerContent: `<p>Set sail for Turkey, where the east meets the west, and discover blue skies, turquoise waters, charming culture and beautiful coastlines. Soak up the delightful cuisine and warmth of Turkish hospitality while stopping to snorkel in azure bays with turtles and magical sunsets.</p>`,
       banner: {
-        loading: require('~/assets/images/turkey-banner-lqip.jpg'),
         image: require('~/assets/images/turkey-banner.jpg'),
         image2x: require('~/assets/images/turkey-banner@2x.jpg'),
         imageWebp: require('~/assets/images/turkey-banner@2x.webp')
@@ -64,7 +63,6 @@ export default {
           description:
             'Explore this beautiful abandoned ghost town a short distance from the bustling Fethiye.',
           image: {
-            loading: require('~/assets/images/turkey-kayakoy-lqip.jpg'),
             image: require('~/assets/images/turkey-kayakoy.jpg'),
             image2x: require('~/assets/images/turkey-kayakoy@2x.jpg'),
             imageWebp: require('~/assets/images/turkey-kayakoy@2x.webp')
@@ -75,7 +73,6 @@ export default {
           description:
             'One of the most photographed beaches in the world, with varying shades of turquoise water, soft sand and surrounded by mountains, it is a true Turkish gem.',
           image: {
-            loading: require('~/assets/images/turkey-oludeniz-lqip.jpg'),
             image: require('~/assets/images/turkey-oludeniz.jpg'),
             image2x: require('~/assets/images/turkey-oludeniz@2x.jpg'),
             imageWebp: require('~/assets/images/turkey-oludeniz@2x.webp')
@@ -86,7 +83,6 @@ export default {
           description:
             'Saklikent, meaning “hidden city” in Turkish, is the second largest gorge in Europe and one of the deepest in the world. ',
           image: {
-            loading: require('~/assets/images/turkey-saklikent-lqip.jpg'),
             image: require('~/assets/images/turkey-saklikent.jpg'),
             image2x: require('~/assets/images/turkey-saklikent@2x.jpg'),
             imageWebp: require('~/assets/images/turkey-saklikent@2x.webp')
@@ -97,7 +93,6 @@ export default {
           description:
             'A famous Turkish natural wonder, named after its blue dazzling water, enjoy launching yourself in to cool off or simply swim and marvel at the sunlight bouncing from the sea.',
           image: {
-            loading: require('~/assets/images/turkey-blue-lqip.jpg'),
             image: require('~/assets/images/turkey-blue.jpg'),
             image2x: require('~/assets/images/turkey-blue@2x.jpg'),
             imageWebp: require('~/assets/images/turkey-blue@2x.webp')

@@ -30,9 +30,9 @@
   color: #fff;
 
   &__logo {
-    width: 100px;
-    margin-right: var(--spacing-large);
+    display: none;
     @include mq($from: tablet) {
+      display: block;
       width: 150px;
       margin-right: var(--spacing-huge);
     }

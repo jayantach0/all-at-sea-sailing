@@ -43,7 +43,6 @@ export default {
     { src: '@/plugins/aos', ssr: false },
     '~/plugins/vee-validate',
     '~/plugins/flatpickr',
-    '~/plugins/lazyload',
     '~/plugins/slide-toggle'
   ],
   /*

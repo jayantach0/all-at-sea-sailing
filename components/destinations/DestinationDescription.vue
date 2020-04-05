@@ -94,7 +94,6 @@
                   v-if="highlight.image.image"
                   class="o-block__img"
                   :src="highlight.image.image"
-                  :loading="highlight.image.loading"
                 />
               </picture>
               <h4 class="u-color-branding">{{ highlight.title }}</h4>

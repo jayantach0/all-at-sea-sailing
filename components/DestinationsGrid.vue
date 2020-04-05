@@ -29,11 +29,7 @@
           type="image/jpeg"
         />
         <source media="(min-width: 900px)" :srcSet="destination.image2x" />
-        <img
-          class="c-destination-grid__img"
-          :src="destination.image"
-          :loading="destination.loading"
-        />
+        <img class="c-destination-grid__img" :src="destination.image" />
       </picture>
       <div class="c-destination-grid__btn">{{ destination.title }}</div>
     </nuxt-link>
@@ -55,7 +51,6 @@ export default {
         {
           title: 'Greece',
           link: '/destinations/greece',
-          loading: require('~/assets/images/greece-lqip.jpg'),
           image: require('~/assets/images/greece.jpg'),
           image2x: require('~/assets/images/greece@2x.jpg'),
           imageWebp: require('~/assets/images/greece@2x.webp')
@@ -63,7 +58,6 @@ export default {
         {
           title: 'Croatia',
           link: '/destinations/croatia',
-          loading: require('~/assets/images/croatia-lqip.jpg'),
           image: require('~/assets/images/croatia.jpg'),
           image2x: require('~/assets/images/croatia@2x.jpg'),
           imageWebp: require('~/assets/images/croatia@2x.webp')
@@ -71,7 +65,6 @@ export default {
         {
           title: 'Turkey',
           link: '/destinations/turkey',
-          loading: require('~/assets/images/turkey-lqip.jpg'),
           image: require('~/assets/images/turkey.jpg'),
           image2x: require('~/assets/images/turkey@2x.jpg'),
           imageWebp: require('~/assets/images/turkey@2x.webp')
@@ -79,7 +72,6 @@ export default {
         {
           title: 'Montenegro',
           link: '/destinations/montenegro',
-          loading: require('~/assets/images/montenegro-lqip.jpg'),
           image: require('~/assets/images/montenegro.jpg'),
           image2x: require('~/assets/images/montenegro@2x.jpg'),
           imageWebp: require('~/assets/images/montenegro@2x.webp')
@@ -87,7 +79,6 @@ export default {
         {
           title: 'Italy',
           link: '/destinations/italy',
-          loading: require('~/assets/images/italy-lqip.jpg'),
           image: require('~/assets/images/italy.jpg'),
           image2x: require('~/assets/images/italy@2x.jpg'),
           imageWebp: require('~/assets/images/italy@2x.webp')
@@ -102,9 +93,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img[lazy='loading'] {
-  filter: blur(10px);
-}
 .c-destination-grid {
   $self: &;
   background-color: var(--color-primary);

@@ -138,6 +138,7 @@ export default {
         dateFormat: 'd-m-y',
         altInput: true,
         altFormat: this.weekStartDay,
+        disableMobile: true,
         locale: {
           firstDayOfWeek: 6
         },

@@ -125,7 +125,7 @@ export default {
   }
 
   &__logo {
-    max-width: 125px;
+    max-width: 75px;
     @include mq($from: tablet) {
       max-width: 150px;
     }

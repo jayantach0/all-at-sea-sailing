@@ -21,11 +21,7 @@
           type="image/jpeg"
         />
         <source media="(min-width: 900px)" :srcSet="img.image2x" />
-        <img
-          class="c-destination-grid__img"
-          :src="img.image"
-          :loading="img.loading"
-        />
+        <img class="c-destination-grid__img" :src="img.image" />
       </picture>
     </div>
   </div>

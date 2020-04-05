@@ -47,7 +47,12 @@ export default {
 .c-navbar {
   width: 100%;
   background-color: #fff;
-  padding: var(--spacing) var(--spacing);
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
+  @include mq($from: tablet) {
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+  }
   &__inner {
     max-width: 1200px;
     margin-left: auto;
@@ -62,8 +67,10 @@ export default {
   //branding
   &__branding {
     height: auto;
-    max-width: 150px;
+    max-width: 130px;
+    margin-left: var(--spacing);
     @include mq($from: tablet) {
+      margin-left: 0;
       max-width: 200px;
     }
   }
@@ -72,12 +79,19 @@ export default {
   &__nav {
     font-size: 0.825rem;
     text-transform: uppercase;
+    font-size: 70%;
+    @include mq($from: smallTablet) {
+      font-size: 85%;
+    }
+    @include mq($from: tablet) {
+      font-size: 100%;
+    }
     @include mq($until: tablet) {
       padding-left: var(--spacing-small);
       padding-right: var(--spacing-small);
       margin-bottom: calc(var(--spacing) * -1);
-      margin-left: calc(var(--spacing) * -1);
-      margin-right: calc(var(--spacing) * -1);
+      margin-left: 0;
+      margin-right: 0;
       flex-grow: 1;
       width: 100%;
       order: 3;
@@ -87,17 +101,20 @@ export default {
       text-align: center;
       display: flex;
       @include mq($until: tablet) {
+        flex-wrap: wrap;
         justify-content: space-between;
       }
     }
     &-item {
-      margin-left: var(--spacing-tiny);
-      margin-right: var(--spacing-tiny);
+      @include mq($from: tablet) {
+        margin-left: var(--spacing-tiny);
+        margin-right: var(--spacing-tiny);
+      }
     }
     &-link {
       display: inline-block;
       color: var(--color-primary);
-      padding: var(--spacing) var(--spacing-small);
+      padding: var(--spacing) 0;
       text-decoration: none;
       @include mq($from: tablet) {
         padding: var(--spacing-tiny);
@@ -115,6 +132,9 @@ export default {
   }
 
   &__cta {
+    @include mq($until: tablet) {
+      margin-right: var(--spacing);
+    }
   }
 }
 </style>
