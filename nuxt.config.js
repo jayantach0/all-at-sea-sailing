@@ -56,14 +56,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/svg',
     '@nuxtjs/style-resources',
-    'nuxt-dayjs-module',
-    [
-      'nuxt-imagemin',
-      {
-        optipng: { optimizationLevel: 5 },
-        plugins: [imageminWebp({ quality: 50 })]
-      }
-    ]
+    'nuxt-dayjs-module'
   ],
   styleResources: {
     scss: ['~assets/scss/tools/*.scss', '~assets/scss/settings/*.scss']
