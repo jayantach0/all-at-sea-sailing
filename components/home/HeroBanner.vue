@@ -105,11 +105,7 @@ export default {
         margin-left: auto;
       }
       @include mq($until: tablet) {
-        display: flex;
-        align-items: flex-start;
-        div {
-          margin-left: var(--spacing);
-        }
+        text-align: center;
       }
     }
   }
@@ -125,7 +121,7 @@ export default {
   }
 
   &__logo {
-    max-width: 75px;
+    max-width: 95px;
     @include mq($from: tablet) {
       max-width: 150px;
     }

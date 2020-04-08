@@ -70,7 +70,7 @@
             >
               <option selected value="Medium">Medium (Max 8 crew)</option>
               <option value="Large">Large (Max 10 crew)</option>
-              <option value="Catamaran">Medium (Max 8 crew)</option>
+              <option value="Catamaran">Catamaran (Max 8 crew)</option>
             </select>
             <span class="c-form-error">{{ errors[0] }}</span>
           </div>
@@ -159,7 +159,9 @@ export default {
         return (
           this.$dayjs(this.selectedDates.weekStart).format(dateFormat) +
           ' - ' +
-          this.$dayjs(this.selectedDates.weekEnd).format(dateFormat)
+          this.$dayjs(this.selectedDates.weekEnd)
+            .add(1, 'day')
+            .format(dateFormat)
         )
       }
       return ''

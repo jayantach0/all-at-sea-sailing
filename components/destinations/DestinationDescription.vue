@@ -52,11 +52,6 @@
               </div>
             </div>
           </div>
-          <div class="u-margin-top-large u-text-center">
-            <nuxt-link class="c-btn c-btn--large" to="/book">
-              Book Now
-            </nuxt-link>
-          </div>
         </div>
       </div>
     </section-block>
@@ -102,6 +97,11 @@
           </div>
         </div>
       </div>
+      <div class="u-margin-top-large u-text-center">
+        <nuxt-link class="c-btn c-btn--large" to="/book">
+          Book Now
+        </nuxt-link>
+      </div>
     </section-block>
   </div>
 </template>
@@ -144,7 +144,9 @@ export default {
   &__locations {
   }
   &__map {
+    margin-bottom: var(--spacing-huge);
     @include mq($from: tablet) {
+      margin-bottom: 0;
       flex-grow: 1;
       position: sticky;
       top: var(--spacing);

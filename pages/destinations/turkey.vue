@@ -32,7 +32,7 @@ export default {
         title: 'Göcek',
         description: `Your trip starts at the Göcek marina, spend some time exploring the beautiful bay here and taking in the crystal blue Mediterranean water and nearby beaches. The small town has many great restaurants where you can dig into the local cuisine before setting sail.`
       },
-      map: require('~/assets/images/croatia-map.svg'),
+      map: require('~/assets/images/turkey-map.svg'),
       locations: [
         {
           title: 'Karacaoren',

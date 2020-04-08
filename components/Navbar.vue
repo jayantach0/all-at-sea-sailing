@@ -69,7 +69,7 @@ export default {
     height: auto;
     max-width: 130px;
     margin-left: var(--spacing);
-    @include mq($from: tablet) {
+    @include mq($from: smallDesktop) {
       margin-left: 0;
       max-width: 200px;
     }
@@ -83,7 +83,7 @@ export default {
     @include mq($from: smallTablet) {
       font-size: 85%;
     }
-    @include mq($from: tablet) {
+    @include mq($from: smallDesktop) {
       font-size: 100%;
     }
     @include mq($until: tablet) {

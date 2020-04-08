@@ -32,7 +32,7 @@ export default {
         title: 'Kotor',
         description: `Located on a beautiful bay surrounded by limestone cliffs, this UNESCO World Heritage Site is not to be missed. Steeped in history, tradition, scenic views, monuments and medieval architecture it makes for a perfect starting point. `
       },
-      map: require('~/assets/images/croatia-map.svg'),
+      map: require('~/assets/images/montenegro-map.svg'),
       locations: [
         {
           title: 'Tivat',

@@ -32,7 +32,7 @@ export default {
         title: 'Portarosa',
         description: `The start of your trip, close enough to explore mainland Sicily, Palermo and Mt Etna. Visit in peak summer and you will find luxury yachts, day trippers and a bustling nightlife.`
       },
-      map: require('~/assets/images/croatia-map.svg'),
+      map: require('~/assets/images/italy-map.svg'),
       locations: [
         {
           title: 'Vulcano',

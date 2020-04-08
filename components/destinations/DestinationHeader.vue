@@ -64,12 +64,13 @@ export default {
   }
   &__body {
     color: #fff;
-    padding: var(--spacing) var(--spacing) var(--spacing-large);
+    padding: var(--spacing) var(--spacing) 0;
     @include mq($from: tablet) {
       flex-basis: 40%;
       display: flex;
       align-items: center;
       min-height: 100%;
+      padding-bottom: var(--spacing-large);
     }
     @include mq($until: tablet) {
       order: 2;

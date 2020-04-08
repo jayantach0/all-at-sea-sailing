@@ -33,7 +33,7 @@ export default {
         title: 'Athens',
         description: `The bustling Ancient Greek capital. Explore this beautiful city which is still dominated by 5th Century landmarks, such as the Acropolis and the Parthenon Temple.`
       },
-      map: require('~/assets/images/croatia-map.svg'),
+      map: require('~/assets/images/greece-map.svg'),
       locations: [
         {
           title: 'Epidavros',
