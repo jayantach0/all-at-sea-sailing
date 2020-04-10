@@ -22,7 +22,7 @@
       data-aos-anchor=".c-destination-grid"
       class="c-destination-grid__item"
     >
-      <picture v-lazy-container="{ selector: 'img' }">
+      <picture>
         <source :srcSet="destination.imageWebp" type="image/webp" />
         <source
           :srcSet="destination.image + ', ' + destination.image2x + ' 2x'"

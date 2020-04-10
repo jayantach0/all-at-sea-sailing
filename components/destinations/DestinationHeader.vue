@@ -14,7 +14,7 @@
       data-aos-once="true"
       data-aos-duration="1250"
     >
-      <picture v-lazy-container="{ selector: 'img' }">
+      <picture>
         <source :srcSet="img.imageWebp" type="image/webp" />
         <source
           :srcSet="img.image + ', ' + img.image2x + ' 2x'"

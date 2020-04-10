@@ -67,10 +67,7 @@
             class="o-layout__item u-1/2@tablet"
           >
             <div class="o-block u-margin-bottom-huge">
-              <picture
-                v-if="highlight.image.image"
-                v-lazy-container="{ selector: 'img' }"
-              >
+              <picture v-if="highlight.image.image">
                 <source :srcSet="highlight.image.imageWebp" type="image/webp" />
                 <source
                   :srcSet="

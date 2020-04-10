@@ -89,7 +89,6 @@
                 @on-change="onDateChange"
               >
               </flat-pickr>
-              <input type="hidden" name="Date" :value="selectedDatesReadable" />
               <div
                 class="c-date-picker__value c-form-control c-form-control--fake"
               >
@@ -193,7 +192,8 @@ export default {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
           'form-name': 'booking',
-          ...this.bookingForm
+          ...this.bookingForm,
+          Date: this.selectedDatesReadable
         })
       })
         .then(() => {
