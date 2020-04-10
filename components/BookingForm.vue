@@ -100,7 +100,7 @@
         <!-- Need to set the hidden input of date to the readable so netlify gets 
         told what value we want to see -->
         <input
-          v-model="selectedDatesReadable"
+          v-model="bookingForm.date"
           type="text"
           class="c-form-control c-form-control--hidden"
           name="date"
@@ -141,7 +141,7 @@ export default {
         email: '',
         destination: '',
         yacht: '',
-        readableDate: ''
+        date: ''
       },
       selectedDates: {
         weekStart: '',
@@ -191,7 +191,7 @@ export default {
       this.selectedDates.weekStart = fp.weekStartDay
       this.selectedDates.weekEnd = fp.weekEndDay
 
-      this.bookingForm.readableDate = this.selectedDatesReadable
+      this.bookingForm.date = this.selectedDatesReadable
     },
     encode(data) {
       return Object.keys(data)
