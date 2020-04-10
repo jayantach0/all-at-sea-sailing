@@ -1,7 +1,7 @@
 <template>
   <div>
     <page-hero>
-      <h1 class="u-h3">Terms &amp; Conditions</h1>
+      <h1 class="u-h3 u-margin-bottom-none">Terms &amp; Conditions</h1>
     </page-hero>
     <section-block>
       <div class="o-wrapper o-wrapper--tiny">
@@ -277,6 +277,11 @@ export default {
   components: {
     PageHero,
     SectionBlock
+  },
+  head() {
+    return {
+      title: 'Terms & Conditions'
+    }
   }
 }
 </script>

@@ -63,7 +63,12 @@
         </div>
       </div>
       <div v-show="formSubmitted">
-        Thanks!
+        <h3 class="u-color-primary u-margin-bottom-small">Thanks!</h3>
+        <p>
+          We'll get back to you as soon as we can, if you have any more
+          questions feel free to email us at
+          <a href="mailto:info@allatsesailing.com">info@allatsesailing.com</a>
+        </p>
       </div>
     </form>
   </validation-observer>

@@ -102,6 +102,11 @@ export default {
         }
       ]
     }
+  },
+  head() {
+    return {
+      title: 'Croatia | Destinations'
+    }
   }
 }
 </script>

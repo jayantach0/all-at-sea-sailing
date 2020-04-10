@@ -80,6 +80,11 @@ export default {
   components: {
     PageHero,
     SectionBlock
+  },
+  head() {
+    return {
+      title: 'Privacy'
+    }
   }
 }
 </script>

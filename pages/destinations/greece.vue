@@ -101,6 +101,11 @@ export default {
         }
       ]
     }
+  },
+  head() {
+    return {
+      title: 'Greece | Destinations'
+    }
   }
 }
 </script>

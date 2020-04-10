@@ -71,7 +71,7 @@ export default {
     margin-left: var(--spacing);
     @include mq($from: smallDesktop) {
       margin-left: 0;
-      max-width: 200px;
+      max-width: 180px;
     }
   }
 
@@ -109,6 +109,10 @@ export default {
       @include mq($from: tablet) {
         margin-left: var(--spacing-tiny);
         margin-right: var(--spacing-tiny);
+      }
+      @include mq($from: smallDesktop) {
+        margin-left: var(--spacing-small);
+        margin-right: var(--spacing-small);
       }
     }
     &-link {

@@ -60,6 +60,11 @@ export default {
     SectionBlock,
     iconCheckmark,
     trustpilot
+  },
+  head() {
+    return {
+      title: 'About'
+    }
   }
 }
 </script>

@@ -12,6 +12,22 @@ export default {
   components: {
     navbar,
     SiteFooter
+  },
+  head() {
+    return {
+      title: 'Chartering a yacht has never been so easy!',
+      titleTemplate: '%s | All At Sea Sailing',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: `
+            Chartering a yacht has never been so easy! Stress free, every step of
+            the way. Charter a yacht from Greece, Croatia, Italy, Turkey or Montenegro.
+          `
+        }
+      ]
+    }
   }
 }
 </script>

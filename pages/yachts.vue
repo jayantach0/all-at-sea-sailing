@@ -205,6 +205,11 @@ export default {
         }
       ]
     }
+  },
+  head() {
+    return {
+      title: 'Yachts'
+    }
   }
 }
 </script>

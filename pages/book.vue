@@ -1,7 +1,7 @@
 <template>
   <div>
     <page-hero>
-      <h1 class="u-h3">Book Now</h1>
+      <h1 class="u-h3 u-margin-bottom-none">Book Now</h1>
     </page-hero>
     <section-block>
       <div class="o-wrapper o-wrapper--x-tiny">
@@ -39,6 +39,11 @@ export default {
     PageHero,
     SectionBlock,
     BookingForm
+  },
+  head() {
+    return {
+      title: 'Book Now | Destinations'
+    }
   }
 }
 </script>

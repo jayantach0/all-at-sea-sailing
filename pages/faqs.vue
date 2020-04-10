@@ -168,6 +168,11 @@ export default {
         }
       ]
     }
+  },
+  head() {
+    return {
+      title: 'FAQs'
+    }
   }
 }
 </script>

@@ -100,6 +100,11 @@ export default {
         }
       ]
     }
+  },
+  head() {
+    return {
+      title: 'Montenegro | Destinations'
+    }
   }
 }
 </script>

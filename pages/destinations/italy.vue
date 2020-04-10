@@ -98,6 +98,11 @@ export default {
         }
       ]
     }
+  },
+  head() {
+    return {
+      title: 'Italy | Destinations'
+    }
   }
 }
 </script>

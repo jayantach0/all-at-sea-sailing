@@ -36,6 +36,11 @@ export default {
     PageHero,
     SectionBlock,
     ContactForm
+  },
+  head() {
+    return {
+      title: 'Contact | Destinations'
+    }
   }
 }
 </script>

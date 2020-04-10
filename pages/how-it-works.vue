@@ -38,6 +38,11 @@ import PageBanner from '~/components/PageBanner'
 export default {
   components: {
     PageBanner
+  },
+  head() {
+    return {
+      title: 'How it works'
+    }
   }
 }
 </script>
