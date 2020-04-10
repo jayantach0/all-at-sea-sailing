@@ -85,10 +85,11 @@
                 class="c-date-picker__picker c-form-control"
                 :config="dateConfig"
                 placeholder="Select date"
-                name="Date"
+                name="DatePicker"
                 @on-change="onDateChange"
               >
               </flat-pickr>
+              <input type="hidden" name="Date" :value="selectedDatesReadable" />
               <div
                 class="c-date-picker__value c-form-control c-form-control--fake"
               >
