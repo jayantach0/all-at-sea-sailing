@@ -16,7 +16,7 @@
             <input
               id="name"
               v-model="bookingForm.name"
-              name="name"
+              name="Name"
               class="c-form-control"
               type="text"
               required
@@ -33,7 +33,7 @@
             <input
               id="email"
               v-model="bookingForm.email"
-              name="email"
+              name="Email"
               class="c-form-control"
               type="text"
               required
@@ -47,7 +47,7 @@
             <select
               id="destination"
               v-model="bookingForm.destination"
-              name="destination"
+              name="Destination"
               class="c-form-control"
             >
               <option selected value="Greece">Greece</option>
@@ -65,7 +65,7 @@
             <select
               id="yacht"
               v-model="bookingForm.yacht"
-              name="yacht"
+              name="Yacht"
               class="c-form-control"
             >
               <option selected value="Medium">Medium (Max 8 crew)</option>
@@ -85,6 +85,7 @@
                 class="c-date-picker__picker c-form-control"
                 :config="dateConfig"
                 placeholder="Select date"
+                name="Date"
                 @on-change="onDateChange"
               >
               </flat-pickr>
