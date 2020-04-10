@@ -1,10 +1,10 @@
 <form
   name="Contact"
-  method="post"
+  method="POST"
   novalidate
   data-netlify="true"
   data-netlify-honeypot="bot-field"
-  @submit.prevent="handleSubmit(submit)"
+  action="/thanks"
 >
   <input type="hidden" name="form-name" value="Contact" />
   <div class="c-form-group" :class="classes">
