@@ -1,0 +1,50 @@
+<form
+  name="Contact"
+  method="post"
+  novalidate
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+  @submit.prevent="handleSubmit(submit)"
+>
+  <input type="hidden" name="form-name" value="Contact" />
+  <div class="c-form-group" :class="classes">
+    <label class="c-form-label" for="name">Name</label>
+    <input
+      id="name"
+      v-model="contactForm.name"
+      name="name"
+      class="c-form-control"
+      type="text"
+      required
+    />
+  </div>
+  <div class="c-form-group" :class="classes">
+    <label class="c-form-label" for="email">Email</label>
+    <input
+      id="email"
+      v-model="contactForm.email"
+      name="email"
+      class="c-form-control"
+      type="text"
+      required
+    />
+  </div>
+
+  <div class="c-form-group" :class="classes">
+    <label class="c-form-label" for="message">Message</label>
+    <textarea
+      id="message"
+      v-model="contactForm.message"
+      name="message"
+      class="c-form-control"
+      type="text"
+      required
+    >
+    </textarea>
+  </div>
+  <div class="u-text-center">
+    <button class="c-btn" type="submit" value="Get in touch">
+      Get in touch
+    </button>
+  </div>
+</form>
