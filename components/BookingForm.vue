@@ -1,14 +1,14 @@
 <template>
   <validation-observer v-slot="{ handleSubmit }" slim>
     <form
-      name="Booking"
+      name="booking"
       method="post"
       novalidate
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       @submit.prevent="handleSubmit(submit)"
     >
-      <input type="hidden" name="form-name" value="Booking" />
+      <input type="hidden" name="form-name" value="booking" />
       <div v-show="!formSubmitted">
         <validation-provider v-slot="{ errors, classes }" rules="required">
           <div class="c-form-group" :class="classes">
