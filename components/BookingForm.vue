@@ -16,7 +16,7 @@
             <input
               id="name"
               v-model="bookingForm.name"
-              name="Name"
+              name="name"
               class="c-form-control"
               type="text"
               required
@@ -33,7 +33,7 @@
             <input
               id="email"
               v-model="bookingForm.email"
-              name="Email"
+              name="email"
               class="c-form-control"
               type="text"
               required
@@ -47,7 +47,7 @@
             <select
               id="destination"
               v-model="bookingForm.destination"
-              name="Destination"
+              name="destination"
               class="c-form-control"
             >
               <option selected value="Greece">Greece</option>
@@ -65,7 +65,7 @@
             <select
               id="yacht"
               v-model="bookingForm.yacht"
-              name="Yacht"
+              name="yacht"
               class="c-form-control"
             >
               <option selected value="Medium">Medium (Max 8 crew)</option>
@@ -99,7 +99,7 @@
         </validation-provider>
         <!-- Need to set the hidden input of date to the readable so netlify gets 
         told what value we want to see -->
-        <input :value="selectedDatesReadable" type="hidden" name="Date" />
+        <input :value="selectedDatesReadable" type="hidden" name="date" />
         <div class="u-text-center">
           <button class="c-btn" type="submit" value="Get a quote">
             Get a quote
