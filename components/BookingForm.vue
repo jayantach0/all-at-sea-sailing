@@ -190,7 +190,7 @@ export default {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
-          'form-name': 'booking-home',
+          'form-name': 'booking',
           ...this.bookingForm
         })
       })
