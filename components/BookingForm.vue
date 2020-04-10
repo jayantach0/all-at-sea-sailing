@@ -81,7 +81,7 @@
             <div class="c-date-picker">
               <flat-pickr
                 ref="picker"
-                v-model="bookingForm.date"
+                v-model="date"
                 class="c-date-picker__picker c-form-control"
                 :config="dateConfig"
                 placeholder="Select date"
@@ -100,7 +100,7 @@
         <!-- Need to set the hidden input of date to the readable so netlify gets 
         told what value we want to see -->
         <input
-          :value="selectedDatesReadable"
+          v-model="selectedDatesReadable"
           type="text"
           class="c-form-control c-form-control--hidden"
           name="date"
@@ -135,12 +135,13 @@ export default {
     return {
       formSubmitted: false,
       formError: false,
+      date: '',
       bookingForm: {
         name: '',
         email: '',
         destination: '',
         yacht: '',
-        date: ''
+        readableDate: ''
       },
       selectedDates: {
         weekStart: '',
