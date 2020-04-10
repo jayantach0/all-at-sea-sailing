@@ -97,6 +97,8 @@
             <span class="c-form-error">{{ errors[0] }}</span>
           </div>
         </validation-provider>
+        <!-- Need to set the hidden input of date to the readable so netlify gets 
+        told what value we want to see -->
         <input :value="selectedDatesReadable" type="hidden" name="Date" />
         <div class="u-text-center">
           <button class="c-btn" type="submit" value="Get a quote">
