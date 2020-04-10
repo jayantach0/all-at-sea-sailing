@@ -1,14 +1,12 @@
 <form
   name="Booking"
-  method="POST"
+  method="post"
   novalidate
   data-netlify="true"
   data-netlify-honeypot="bot-field"
-  action="/thanks"
+  hidden
 >
   <input type="hidden" name="form-name" value="Booking" />
-  <div class="c-form-group" :class="classes">
-    <label class="c-form-label" for="name">Name</label>
     <input
       id="name"
       v-model="bookingForm.name"
@@ -17,9 +15,6 @@
       type="text"
       required
     />
-  </div>
-  <div class="c-form-group" :class="classes">
-    <label class="c-form-label" for="email">Email</label>
     <input
       id="email"
       v-model="bookingForm.email"
@@ -28,9 +23,6 @@
       type="text"
       required
     />
-  </div>
-  <div class="c-form-group" :class="classes">
-    <label class="c-form-label" for="destination">Destination</label>
     <select
       id="destination"
       v-model="bookingForm.destination"
@@ -43,9 +35,6 @@
       <option value="Montenegro">Montenegro</option>
       <option value="Italy">Italy</option>
     </select>
-  </div>
-  <div class="c-form-group" :class="classes">
-    <label class="c-form-label" for="yacht">Yacht</label>
     <select
       id="yacht"
       v-model="bookingForm.yacht"
@@ -56,13 +45,7 @@
       <option value="Large">Large (Max 10 crew)</option>
       <option value="Catamaran">Catamaran (Max 8 crew)</option>
     </select>
-  </div>
   <!-- Need to set the hidden input of date to the readable so netlify gets 
   told what value we want to see -->
   <input :value="selectedDatesReadable" type="hidden" name="Date" />
-  <div class="u-text-center">
-    <button class="c-btn" type="submit" value="Get a quote">
-      Get a quote
-    </button>
-  </div>
 </form>
