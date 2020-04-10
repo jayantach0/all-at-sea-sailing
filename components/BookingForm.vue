@@ -85,7 +85,6 @@
                 class="c-date-picker__picker c-form-control"
                 :config="dateConfig"
                 placeholder="Select date"
-                name="DatePicker"
                 @on-change="onDateChange"
               >
               </flat-pickr>
@@ -98,6 +97,7 @@
             <span class="c-form-error">{{ errors[0] }}</span>
           </div>
         </validation-provider>
+        <input :value="selectedDatesReadable" type="hidden" name="Date" />
         <div class="u-text-center">
           <button class="c-btn" type="submit" value="Get a quote">
             Get a quote
@@ -142,8 +142,6 @@ export default {
       },
       dateConfig: {
         dateFormat: 'd-m-y',
-        altInput: true,
-        altFormat: this.weekStartDay,
         disableMobile: true,
         locale: {
           firstDayOfWeek: 6
@@ -178,6 +176,8 @@ export default {
       const fp = this.$refs.picker.fp
       this.selectedDates.weekStart = fp.weekStartDay
       this.selectedDates.weekEnd = fp.weekEndDay
+
+      this.bookingForm.readableDate = this.selectedDatesReadable
     },
     encode(data) {
       return Object.keys(data)
@@ -192,8 +192,7 @@ export default {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
           'form-name': 'booking',
-          ...this.bookingForm,
-          Date: this.selectedDatesReadable
+          ...this.bookingForm
         })
       })
         .then(() => {

@@ -96,6 +96,7 @@ export default {
 .c-destination-grid {
   $self: &;
   background-color: var(--color-primary);
+  overflow: hidden;
   @include mq($from: smallTablet) {
     display: flex;
     flex-wrap: wrap;
