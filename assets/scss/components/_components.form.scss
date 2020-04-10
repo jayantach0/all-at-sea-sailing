@@ -27,6 +27,10 @@
     display: flex;
     align-items: center;
   }
+
+  &--hidden {
+    display: none;
+  }
   @at-root {
     textarea#{&} {
       padding-top: .75em;

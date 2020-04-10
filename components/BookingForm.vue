@@ -99,7 +99,12 @@
         </validation-provider>
         <!-- Need to set the hidden input of date to the readable so netlify gets 
         told what value we want to see -->
-        <input :value="selectedDatesReadable" type="hidden" name="date" />
+        <input
+          :value="selectedDatesReadable"
+          type="text"
+          class="c-form-control c-form-control--hidden"
+          name="date"
+        />
         <div class="u-text-center">
           <button class="c-btn" type="submit" value="Get a quote">
             Get a quote
@@ -121,7 +126,6 @@
 <script>
 import { ValidationObserver, ValidationProvider } from 'vee-validate'
 import weekSelect from 'flatpickr/dist/plugins/weekSelect/weekSelect'
-
 export default {
   components: {
     ValidationObserver,
@@ -145,6 +149,7 @@ export default {
       dateConfig: {
         dateFormat: 'd-m-y',
         disableMobile: true,
+        minDate: 'today',
         locale: {
           firstDayOfWeek: 6
         },
@@ -172,6 +177,12 @@ export default {
       }
       return ''
     }
+  },
+  mounted() {
+    // const days = 7
+    // const date = new Date()
+    // const min = date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000)
+    // this.$set(this.dateConfig, 'minDate', min)
   },
   methods: {
     onDateChange() {
