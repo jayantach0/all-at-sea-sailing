@@ -37,7 +37,17 @@
     <destinations-grid />
     <section-block>
       <div class="o-wrapper o-wrapper--tiny">
-        <h3 class="c-heading c-heading--bordered u-text-center u-color-primary">
+        <h3
+          class="c-heading u-text-center u-color-primary u-margin-bottom-small"
+        >
+          Let's talk now
+        </h3>
+        <p class="u-text-center u-text-scaled">
+          Call us on <a href="tel:+447542937259">+44 75429 37259</a>
+        </p>
+        <h3
+          class="u-margin-top-huge c-heading c-heading--bordered u-text-center u-color-primary"
+        >
           Send us a message
         </h3>
       </div>

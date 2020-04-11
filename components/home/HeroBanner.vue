@@ -99,10 +99,12 @@ export default {
       order: 2;
     }
     &-inner {
-      padding-right: var(--spacing-large);
       @include mq($from: tablet) {
         max-width: 420px;
         margin-left: auto;
+      }
+      @include mq($from: smallDesktop) {
+        padding-right: var(--spacing-large);
       }
       @include mq($until: tablet) {
         text-align: center;

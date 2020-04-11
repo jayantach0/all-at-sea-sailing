@@ -43,7 +43,7 @@ export default {
         {
           title: 'Ermioni',
           description:
-            '<p>Experience a beautiful sail to Ermioni, cruising down the Saronic gulf into the rustic town of Ermioni. Sunset cocktails bars and restaurants line the sea shore with breathtaking views over the islands. Go slightly inland to see wonderful Greek vineyards and farms. </p>'
+            '<p>Experience a beautiful sail to Ermioni, cruising down the Saronic gulf into the rustic town of Ermioni. Sunset cocktail bars and restaurants line the sea shore with breathtaking views over the islands. Go slightly inland to see wonderful Greek vineyards and farms. </p>'
         },
         {
           title: 'Hydra',
