@@ -28,17 +28,22 @@
         </div>
       </div>
     </section-block>
+    <section-block color="branding">
+      <social-proof />
+    </section-block>
   </div>
 </template>
 <script>
 import PageHero from '~/components/PageHero'
 import SectionBlock from '~/components/Section'
 import BookingForm from '~/components/BookingForm'
+import SocialProof from '~/components/SocialProof'
 export default {
   components: {
     PageHero,
     SectionBlock,
-    BookingForm
+    BookingForm,
+    SocialProof
   },
   head() {
     return {

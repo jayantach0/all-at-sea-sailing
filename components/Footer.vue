@@ -32,7 +32,12 @@
               <nuxt-link to="/terms">Terms &amp; Conditions</nuxt-link>
             </li>
           </ul>
-          <trustpilot class="c-trustpilot" />
+          <a
+            href="https://www.trustpilot.com/review/allatseasailing.com"
+            target="_blank"
+          >
+            <trustpilot class="c-trustpilot" />
+          </a>
         </div>
         <div class="c-footer__branding">
           <logo color="brand" />

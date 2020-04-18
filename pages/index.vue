@@ -35,6 +35,9 @@
       </div>
     </section-block>
     <destinations-grid />
+    <section-block color="branding">
+      <social-proof />
+    </section-block>
     <section-block>
       <div class="o-wrapper o-wrapper--tiny">
         <h3
@@ -64,6 +67,7 @@ import BookingForm from '~/components/BookingForm'
 import ContactForm from '~/components/ContactForm'
 import DestinationsGrid from '~/components/DestinationsGrid'
 import iconCheckmark from '~/assets/images/icon-checkmark.svg?inline'
+import SocialProof from '~/components/SocialProof'
 export default {
   components: {
     HeroBanner,
@@ -71,7 +75,8 @@ export default {
     BookingForm,
     DestinationsGrid,
     ContactForm,
-    iconCheckmark
+    iconCheckmark,
+    SocialProof
   },
   data() {
     return {

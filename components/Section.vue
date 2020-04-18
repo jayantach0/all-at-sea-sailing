@@ -35,5 +35,9 @@ export default {
     background-color: var(--color-primary);
     color: #fff;
   }
+
+  &--branding {
+    background-color: var(--color-branding);
+  }
 }
 </style>

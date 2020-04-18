@@ -32,6 +32,7 @@
     "vue-flatpickr-component": "^8.1.5",
     "vue-lazyload": "^1.3.3",
     "vue-slide-up-down": "^2.0.1",
+    "vue-tiny-slider": "^0.1.39",
     "webp-loader": "^0.6.0"
   },
   "devDependencies": {

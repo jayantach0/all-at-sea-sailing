@@ -43,7 +43,8 @@ export default {
     { src: '@/plugins/aos', ssr: false },
     '~/plugins/vee-validate',
     '~/plugins/flatpickr',
-    '~/plugins/slide-toggle'
+    '~/plugins/slide-toggle',
+    { src: '~/plugins/vue-tiny-slider.js', mode: 'client' }
   ],
   /*
    ** Nuxt.js dev-modules
