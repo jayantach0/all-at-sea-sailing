@@ -1,7 +1,10 @@
 <template>
   <div class="c-social-proof">
     <div>
-      <vue-tiny-slider v-bind="tinySliderOptions">
+      <vue-tiny-slider
+        v-bind="tinySliderOptions"
+        class="c-social-proof__slideshow"
+      >
         <div v-for="quote in quotes" :key="quote.author">
           <div class="o-wrapper">
             <div class="c-quote">
@@ -71,6 +74,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import 'tiny-slider/src/tiny-slider';
 .tns-nav {
   margin-top: 0.5em;
   margin-bottom: var(--spacing-tiny);
@@ -96,6 +100,10 @@ export default {
 }
 .c-social-proof {
   text-align: center;
+
+  &__slideshow {
+    display: block;
+  }
 }
 
 .c-quote {
