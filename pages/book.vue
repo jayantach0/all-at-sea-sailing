@@ -28,7 +28,7 @@
         </div>
       </div>
     </section-block>
-    <section-block color="branding">
+    <section-block color="tertiary">
       <social-proof />
     </section-block>
   </div>

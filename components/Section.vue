@@ -36,8 +36,8 @@ export default {
     color: #fff;
   }
 
-  &--branding {
-    background-color: var(--color-branding);
+  &--tertiary {
+    background-color: hsl(209, 32%, 80%);
   }
 }
 </style>

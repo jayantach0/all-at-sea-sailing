@@ -8,7 +8,7 @@
         <div v-for="quote in quotes" :key="quote.author">
           <div class="o-wrapper">
             <div class="c-quote">
-              <div class="c-quote__text">{{ quote.text }}</div>
+              <div class="c-quote__text">“{{ quote.text }}”</div>
               <div class="c-quote__author">— {{ quote.author }}</div>
             </div>
           </div>
