@@ -1,4 +1,3 @@
-import imageminWebp from 'imagemin-webp'
 export default {
   mode: 'universal',
   /*
@@ -35,7 +34,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/scss/styles.scss'],
+  css: ['@/assets/scss/styles.scss', 'tiny-slider/dist/tiny-slider.css'],
   /*
    ** Plugins to load before mounting the App
    */

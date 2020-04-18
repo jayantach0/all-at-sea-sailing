@@ -71,7 +71,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'tiny-slider/src/tiny-slider';
 .tns-nav {
   margin-top: 0.5em;
   margin-bottom: var(--spacing-tiny);
