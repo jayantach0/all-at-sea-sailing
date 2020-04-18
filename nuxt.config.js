@@ -34,7 +34,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/scss/styles.scss', 'tiny-slider/dist/tiny-slider.css'],
+  css: ['@/assets/scss/styles.scss'],
   /*
    ** Plugins to load before mounting the App
    */

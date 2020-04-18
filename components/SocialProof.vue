@@ -66,6 +66,17 @@ export default {
         navPosition: 'bottom'
       }
     }
+  },
+  head() {
+    return {
+      link: [
+        {
+          rel: 'stylesheet',
+          href:
+            'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.3.5/tiny-slider.css'
+        }
+      ]
+    }
   }
 }
 </script>
