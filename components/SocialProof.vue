@@ -8,6 +8,13 @@
         <div v-for="quote in quotes" :key="quote.author">
           <div class="o-wrapper">
             <div class="c-quote">
+              <div class="u-color-primary">
+                <star />
+                <star />
+                <star />
+                <star />
+                <star />
+              </div>
               <div class="c-quote__text">“{{ quote.text }}”</div>
               <div class="c-quote__author">— {{ quote.author }}</div>
             </div>
@@ -35,7 +42,11 @@
 </template>
 
 <script>
+import star from '~/assets/images/star.svg?inline'
 export default {
+  components: {
+    star
+  },
   data() {
     return {
       quotes: [
