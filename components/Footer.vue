@@ -20,6 +20,9 @@
               <nuxt-link to="/faqs">FAQs</nuxt-link>
             </li>
             <li class="o-list-inline__item c-footer__link">
+              <nuxt-link to="/our-skippers">Our Skippers</nuxt-link>
+            </li>
+            <li class="o-list-inline__item c-footer__link">
               <nuxt-link to="/about">About us</nuxt-link>
             </li>
             <li class="o-list-inline__item c-footer__link">
@@ -67,14 +70,14 @@ export default {
   }
   &__body {
     margin-bottom: var(--spacing);
-    @include mq($from: tablet) {
+    @include mq($from: desktop) {
       display: flex;
       flex-direction: row-reverse;
     }
   }
   &__info {
     margin-bottom: var(--spacing);
-    @include mq($from: tablet) {
+    @include mq($from: desktop) {
       flex-grow: 1;
       text-align: right;
     }
@@ -85,7 +88,7 @@ export default {
   }
   &__link {
     margin-right: var(--spacing-small);
-    @include mq($from: tablet) {
+    @include mq($from: desktop) {
       margin-left: var(--spacing-small);
     }
     &:last-child {
