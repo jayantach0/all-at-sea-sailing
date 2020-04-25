@@ -89,8 +89,11 @@ export default {
 .tns-nav {
   margin-top: 0.5em;
   margin-bottom: var(--spacing-tiny);
+  display: flex;
+  justify-content: center;
   button {
-    display: inline-block;
+    -webkit-appearance: none;
+    display: block;
     width: 0.75em;
     height: 0.75em;
     border-radius: 50%;
