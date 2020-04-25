@@ -8,7 +8,7 @@
         <div v-for="quote in quotes" :key="quote.author">
           <div class="o-wrapper">
             <div class="c-quote">
-              <div class="u-color-primary">
+              <div class="c-quote__stars">
                 <star />
                 <star />
                 <star />
@@ -121,6 +121,13 @@ export default {
   &__text {
     font-size: var(--text-default);
     color: var(--color-primary);
+  }
+
+  &__stars {
+    color: #21b684;
+    svg {
+      width: 32px;
+    }
   }
 
   &__author {

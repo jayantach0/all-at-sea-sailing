@@ -64,35 +64,35 @@ export default {
         {
           name: 'Tommy',
           country: 'gb',
-          image: 'https://source.unsplash.com/100x100?face',
+          image: require('~/assets/images/skipper-tommy.jpg'),
           bio:
             'Tommy is from the South West of England and teaches sailing when he’s not in the Mediterranean with All At Sea. His experience, sailing ability and brilliant personality make for winning combination as a skipper on our team.'
         },
         {
           name: 'Mati',
           country: 'fr',
-          image: 'https://source.unsplash.com/100x100?face',
+          image: require('~/assets/images/skipper-mati.jpg'),
           bio:
             'Mati is a true global sailor, when he’s not working with All At Sea, he’s either crossing the Atlantic Ocean or delivering yachts back and forth to his home island of Corsica. Mati’s charm and pure drive for sailng makes him a joy to be around.'
         },
         {
           name: 'James',
           country: 'gb',
-          image: 'https://source.unsplash.com/100x100?face',
+          image: require('~/assets/images/skipper-james.jpg'),
           bio:
             'James is from London, England, and like all great sailors his passion shines through every time he’s on the water. James has the amazing ability to make everyone smile, along with his sailing experience he’s a real asset to the team.'
         },
         {
           name: 'Nick',
           country: 'gb',
-          image: 'https://source.unsplash.com/100x100?face',
+          image: require('~/assets/images/skipper-nick.jpg'),
           bio:
             'Being from Portsmouth, England, Nick has grown up around the water, and feels most comfortable with a fresh breeze in his sails. After sailing around the Mediterranean for many years Nick has a wealth of experience to draw upon.'
         },
         {
           name: 'Marco',
           country: 'it',
-          image: 'https://source.unsplash.com/100x100?face',
+          image: require('~/assets/images/skipper-marco.jpg'),
           bio:
             'Marco is a passionate sailor. He learnt to sail in the small Italian fishing village of his childhood. A real pirate, Marco has sailed all around the world. His professionalism and easy going charm make him an ideal skipper.'
         }
