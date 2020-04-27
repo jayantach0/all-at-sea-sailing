@@ -98,6 +98,7 @@ export default {
     height: 16px;
     border-radius: 50%;
     border: 0;
+    padding: 0;
     margin-right: var(--spacing-tiny);
     margin-left: var(--spacing-tiny);
     outline: none;
