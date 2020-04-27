@@ -73,6 +73,6 @@ export default {
   text-decoration: none;
 }
 .c-trustpilot {
-  max-width: 125px;
+  width: 125px;
 }
 </style>

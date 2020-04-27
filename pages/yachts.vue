@@ -51,7 +51,7 @@
       <div class="o-wrapper u-margin-top-large">
         <p class="u-color-branding u-text-default">
           *If the exact boat pictured isn’t available, one of equal size and
-          specifications will provided.
+          specifications will be provided.
         </p>
       </div>
     </section-block>

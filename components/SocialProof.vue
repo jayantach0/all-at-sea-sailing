@@ -94,8 +94,8 @@ export default {
   button {
     -webkit-appearance: none;
     display: block;
-    width: 0.75em;
-    height: 0.75em;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     border: 0;
     margin-right: var(--spacing-tiny);
@@ -103,6 +103,7 @@ export default {
     outline: none;
     background-color: var(--color-primary);
     opacity: 0.15;
+    overflow: hidden;
     transition: 0.2s ease;
     &:hover {
       opacity: 0.5;
