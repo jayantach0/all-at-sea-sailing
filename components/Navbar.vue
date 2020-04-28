@@ -101,6 +101,10 @@ export default {
         white-space: nowrap;
         justify-content: space-between;
         overflow-x: auto;
+        margin-left: calc(var(--spacing-small) * -1);
+        margin-right: calc(var(--spacing-small) * -1);
+        padding-left: var(--spacing-small);
+        padding-right: var(--spacing-small);
       }
     }
     &-item {
