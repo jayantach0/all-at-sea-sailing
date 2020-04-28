@@ -79,10 +79,7 @@ export default {
   &__nav {
     font-size: 0.825rem;
     text-transform: uppercase;
-    font-size: 70%;
-    @include mq($from: smallTablet) {
-      font-size: 85%;
-    }
+    font-size: 85%;
     @include mq($from: smallDesktop) {
       font-size: 100%;
     }
@@ -101,8 +98,9 @@ export default {
       text-align: center;
       display: flex;
       @include mq($until: tablet) {
-        flex-wrap: wrap;
+        white-space: nowrap;
         justify-content: space-between;
+        overflow-x: auto;
       }
     }
     &-item {
@@ -118,7 +116,7 @@ export default {
     &-link {
       display: inline-block;
       color: var(--color-primary);
-      padding: var(--spacing) 0;
+      padding: var(--spacing) var(--spacing-small);
       text-decoration: none;
       @include mq($from: tablet) {
         padding: var(--spacing-tiny);
