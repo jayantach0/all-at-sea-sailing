@@ -20,8 +20,8 @@
             </div>
             <div class="o-pack__item u-margin-top-tiny">
               <div>Call us on:</div>
-              <a class="u-text-default" href="tel:+447542937259"
-                >+44 75429 37259</a
+              <a class="u-text-default" href="tel:+442034885331"
+                >+44 (0) 20 3488 5331</a
               >
             </div>
           </div>

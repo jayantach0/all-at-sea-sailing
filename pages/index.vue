@@ -46,7 +46,7 @@
           Let's talk now
         </h3>
         <p class="u-text-center u-text-scaled">
-          Call us on <a href="tel:+447542937259">+44 75429 37259</a>
+          Call us on <a href="tel:+442034885331">+44 (0) 20 3488 5331</a>
         </p>
         <h3
           class="u-margin-top-huge c-heading c-heading--bordered u-text-center u-color-primary"
