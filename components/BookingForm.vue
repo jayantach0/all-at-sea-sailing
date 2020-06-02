@@ -68,9 +68,9 @@
               name="yacht"
               class="c-form-control"
             >
-              <option selected value="Medium">Medium (Max 8 crew)</option>
-              <option value="Large">Large (Max 10 crew)</option>
-              <option value="Catamaran">Catamaran (Max 8 crew)</option>
+              <option selected value="Medium">Medium (6 crew)</option>
+              <option value="Large">Large (8 crew)</option>
+              <option value="Catamaran">Catamaran (8 crew)</option>
             </select>
             <span class="c-form-error">{{ errors[0] }}</span>
           </div>

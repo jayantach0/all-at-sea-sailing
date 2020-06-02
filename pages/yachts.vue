@@ -107,7 +107,7 @@ export default {
           name: 'Medium Yacht',
           features: [
             '44 ft length',
-            '8 Guests',
+            '6 Guests',
             '3 Double cabins',
             '1 Bunk room',
             '2 Bathrooms',
@@ -123,7 +123,7 @@ export default {
           name: 'Large Yacht',
           features: [
             '52 ft length',
-            '10 Guests ',
+            '8 Guests ',
             '4 Double cabins',
             '1 Bunk room',
             '3 Bathrooms',
