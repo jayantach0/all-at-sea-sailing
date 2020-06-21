@@ -33,12 +33,13 @@
         <h4 class="u-color-primary">2. Payment</h4>
 
         <p>
-          In order to confirm your chosen travel arrangements, a deposit of £100
-          per person (or full payment if booking within 10 weeks of departure)
-          must be paid at the time of booking. If we do not receive all payments
-          due (including any surcharge where applicable) in full and on time, we
-          are entitled to assume that you wish to cancel your booking. In this
-          case cancellation charges may be payable – see clause 6.
+          In order to confirm your chosen travel arrangements, a deposit of
+          £1000 per boat (or full payment if booking within 10 weeks of
+          departure) must be paid at the time of booking. If we do not receive
+          all payments due (including any surcharge where applicable) in full
+          and on time, we are entitled to assume that you wish to cancel your
+          booking. In this case cancellation charges may be payable – see clause
+          6.
         </p>
 
         <h4 class="u-color-primary">3. Your contract</h4>
