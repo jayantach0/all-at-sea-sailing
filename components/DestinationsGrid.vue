@@ -3,7 +3,7 @@
     class="c-destination-grid"
     :class="{ 'c-destination-grid--large': titlePage }"
   >
-    <div
+    <h1
       v-if="titlePage"
       :data-aos="titlePage ? 'fade' : 'fade-left'"
       data-aos-once="true"
@@ -11,7 +11,7 @@
       class="c-destination-grid__item c-destination-grid__item--title"
     >
       Destinations
-    </div>
+    </h1>
     <nuxt-link
       v-for="(destination, index) in destinations"
       :key="destination.title"

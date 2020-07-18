@@ -23,7 +23,7 @@
     "imagemin-webp": "^5.1.0",
     "lqip-loader": "^2.2.0",
     "node-sass": "^4.13.1",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.13.0",
     "nuxt-dayjs-module": "^1.1.2",
     "nuxt-imagemin": "^1.0.0",
     "sass-loader": "^8.0.2",
