@@ -34,7 +34,7 @@
 
         <p>
           In order to confirm your chosen travel arrangements, a deposit of
-          £1000 per boat (or full payment if booking within 10 weeks of
+          €1000 per boat (or full payment if booking within 10 weeks of
           departure) must be paid at the time of booking. If we do not receive
           all payments due (including any surcharge where applicable) in full
           and on time, we are entitled to assume that you wish to cancel your
