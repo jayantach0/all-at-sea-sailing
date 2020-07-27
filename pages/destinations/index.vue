@@ -14,7 +14,7 @@ export default {
   },
   head() {
     return {
-      title: 'Destinations'
+      title: 'Yacht Charter Destinations'
     }
   }
 }
