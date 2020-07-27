@@ -103,7 +103,7 @@ export default {
   },
   head() {
     return {
-      title: 'Turkey | Destinations'
+      title: 'Yacht Charter Turkey| Destinations'
     }
   }
 }
