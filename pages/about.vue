@@ -63,7 +63,7 @@ export default {
   },
   head() {
     return {
-      title: 'About US | Yacht Charter UK',
+      title: 'About Us | Yacht Charter UK',
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
