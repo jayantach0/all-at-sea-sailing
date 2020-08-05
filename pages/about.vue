@@ -63,7 +63,16 @@ export default {
   },
   head() {
     return {
-      title: 'About'
+      title: 'About US | Yacht Charter UK',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'All at sea sailing are passionate about sailing, spending time with friends, family and the enjoyment of life.'
+        }
+      ]
     }
   }
 }

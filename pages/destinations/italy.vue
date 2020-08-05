@@ -101,7 +101,16 @@ export default {
   },
   head() {
     return {
-      title: 'Italy | Destinations'
+      title: 'Yacht Charter Italy | Italy Sailing Holidays',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Explore one of the world’s most beautiful sailing destinations Italy, using our luxury yacht charter for a dream sailing holidays.'
+        }
+      ]
     }
   }
 }

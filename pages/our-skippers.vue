@@ -101,7 +101,16 @@ export default {
   },
   head() {
     return {
-      title: 'Our Skippers'
+      title: 'Our Skippers | Skippered Yacht Charter',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Our team consists of highly experienced and knowledgeable skippers that will provideyou with an unforgettable sailing holiday'
+        }
+      ]
     }
   }
 }

@@ -103,7 +103,16 @@ export default {
   },
   head() {
     return {
-      title: 'Montenegro | Destinations'
+      title: 'Yacht Charter Montenegro | Montenegro Sailing Holidays',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Explore one of the world’s most attractive sailing destinations Montenegro, using our luxury yacht charter for a dream sailing holidays.'
+        }
+      ]
     }
   }
 }

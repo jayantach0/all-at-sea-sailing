@@ -208,7 +208,16 @@ export default {
   },
   head() {
     return {
-      title: 'Yachts'
+      title: 'Our Luxury Yacht Charter | Yacht Charter Rent',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'All at sea sailing has premium class boats, all less than 10 years old, which offers luxury and performance on board.'
+        }
+      ]
     }
   }
 }

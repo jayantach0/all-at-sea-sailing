@@ -105,7 +105,16 @@ export default {
   },
   head() {
     return {
-      title: 'Croatia | Destinations'
+      title: 'Yacht Charter Croatia | Luxury Yacht Charter',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Explore one of the world’s most attractive sailing destinations Croatia, using our luxury yacht charter for a dream vacation.'
+        }
+      ]
     }
   }
 }

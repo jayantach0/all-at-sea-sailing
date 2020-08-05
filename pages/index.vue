@@ -93,6 +93,20 @@ export default {
         'Pay deposit and full amount later'
       ]
     }
+  },
+  head() {
+    return {
+      title: 'Yacht Charter | Luxury Yacht Charter',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'All at sea sailing provides luxury yacht charters to sail through the beautiful costal destination of Mediterranean, Croatia, Greece, Turkey, Italy and Montenegro.'
+        }
+      ]
+    }
   }
 }
 </script>

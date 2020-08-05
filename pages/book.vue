@@ -47,7 +47,7 @@ export default {
   },
   head() {
     return {
-      title: 'Book Now | Destinations'
+      title: 'Book Now'
     }
   }
 }

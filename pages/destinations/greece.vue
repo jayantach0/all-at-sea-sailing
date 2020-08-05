@@ -104,7 +104,16 @@ export default {
   },
   head() {
     return {
-      title: 'Greece | Destinations'
+      title: 'Yacht Charter Greece | Private Yacht Charter',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Explore one of the world’s top sailing destinations Greece, using our luxury yacht charter for a dream holiday.'
+        }
+      ]
     }
   }
 }
