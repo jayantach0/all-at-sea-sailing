@@ -103,7 +103,7 @@ export default {
           hid: 'description',
           name: 'description',
           content:
-            'All at sea sailing provides luxury yacht charters to sail through the beautiful costal destination of Mediterranean, Croatia, Greece, Turkey, Italy and Montenegro.'
+            'All at sea sailing provides luxury yacht charters to sail through the beautiful coastal destination of Mediterranean, Croatia, Greece, Turkey, Italy and Montenegro.'
         }
       ]
     }
